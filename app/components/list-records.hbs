@@ -1,0 +1,13 @@
+<ul class="records-list-container">
+  {{#each @list as |record|}}
+    <li class="record-list-item">
+    	<LinkTo @route="tab">
+    		{{#each @columnKeys as |key|}}
+                <div class="item-column">
+    			     {{get record key}}
+                </div>
+    		{{/each}}
+    	</LinkTo>
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,81 @@
+.tab-list-container {
+	list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    background: #111;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tab-menu {
+	margin: 10px;
+}
+
+.tab-menu-button {
+	border: 0px;
+    font-size: 20px;
+    background: #111;
+    color: white;
+}
+
+.dialog-popup {
+	position: absolute;
+    width: 150px;
+    background: white;
+    z-index: 3;
+    display: none;
+    box-shadow: 0 0 20px rgba(0,0,0,.65), 0 0 1px 1px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 5px;
+    background: #545454;
+    margin-top: 5px;
+}
+
+.sub-menu-list-container {
+	list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.sub-menu-button {
+	border: 0px;
+    background: #545454;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+}
+
+.sub-menu-item {
+	padding: 5px;
+}
+
+.iframeContent {
+	width: 1000px;
+	height: 1000px;
+}
+
+.records-list-container {
+    width: 100%;
+    height: 400px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.record-list-item {
+    margin: 10px;
+    background: #e2e2e2;
+    padding: 20px;
+}
+
+.record-list-item a {
+    margin: 10px;
+    background: #e2e2e2;
+    padding: 20px;
+}
+
+.item-column {
+    padding: 0px 20px;
+    display: inline-block;
+}

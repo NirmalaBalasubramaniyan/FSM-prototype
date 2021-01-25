@@ -1,0 +1,9 @@
+<ul class="tab-list-container">
+	{{#each @tabs as |tabHead|}}
+		<li class="tab-menu"><button type="button" {{on 'mouseover' (fn this.showSubMenu tabHead)}}  {{on 'click' (fn this.hideSubMenu)}} class="tab-menu-button">{{tabHead.title}}</button></li>
+	{{/each}}
+</ul>
+
+<div class="dialog-popup" style="display: {{if this.subMenuVisible 'block' 'none'}}">
+	<HeaderSubMenu @submenus={{this.submenu}} />
+</div>
