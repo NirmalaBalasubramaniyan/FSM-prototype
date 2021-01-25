@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'jsapps', // No i18N
+    modulePrefix: 'FSM-prototype', // No i18N
     environment,
     rootURL: '/',
     locationType: 'auto', // No i18N
