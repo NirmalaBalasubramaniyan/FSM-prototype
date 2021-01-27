@@ -1,9 +1,29 @@
+<div class="tab-grp">
 <ul class="tab-list-container">
 	{{#each @tabs as |tabHead|}}
 		<li class="tab-menu"><button type="button" {{on 'mouseover' (fn this.showSubMenu tabHead)}}  {{on 'click' (fn this.hideSubMenu)}} class="tab-menu-button">{{tabHead.title}}</button></li>
 	{{/each}}
+	 <li class="tab-menu">
+  		<input type="text" class="tab-search" {{on 'focusout' (fn this.showSubMenu)}} {{on 'focus' (fn this.hideSubMenu)}}/>
+  </li>
 </ul>
 
-<div class="dialog-popup">
+<div class="dialog-popup1">
 	<HeaderSubMenu @submenus={{this.submenu}} />
+</div>
+
+
+
+<div>
+<ul>
+	<li>
+			{{#link-to "settings" class="setting-icon"}}{{/link-to}}
+	</li>
+	<li>
+			{{#link-to "settings" class="add-icon"}}{{/link-to}}
+	</li>
+</ul>
+</div>
+
+
 </div>
