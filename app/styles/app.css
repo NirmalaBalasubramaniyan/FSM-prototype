@@ -100,6 +100,13 @@
 
 .topPanC {
   grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.topPanR {
+  grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -146,6 +153,17 @@
     background: white;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+.menu-act {
+  float: left;
+    padding: .3125rem 1rem .25rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: var(--clr3);
+    cursor: pointer;
+    border: 1px solid #e4e4e4;
+    position: relative;
 }
 
 
