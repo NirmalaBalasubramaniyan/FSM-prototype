@@ -1,4 +1,5 @@
 <ul class="records-list-container">
+
 {{#each @columnKeys as |key|}}
                 <div class="item-column">
                      {{key}}
@@ -6,7 +7,7 @@
             {{/each}}
   {{#each @list as |record|}}
     <li class="record-list-item">
-    	<LinkTo @route="tab">
+    	<LinkTo @route="tab.detail" @model={{record.Name}}>
     		{{#each @columnKeys as |key|}}
                 <div class="item-column">
     			     {{get record key}}

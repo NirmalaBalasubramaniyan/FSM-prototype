@@ -1,9 +1,1 @@
-<ul><li {{on "click" (fn this.changeView "list")}}>List</li><li {{on "click" (fn this.changeView "canvas")}}>Canvas</li></ul>
-
-<div>
-{{#if (eq this.selectedView 'list')}}
-<ListRecords @list={{@model.records}} @columnKeys={{@model.columns}} @searchOptions={{@model.searchOptions}}/>
-{{else if (eq this.selectedView 'canvas')}}
-<RecordsCanvasView @records={{@model.records}} @columnKeys={{@model.columns}} @searchOptions={{@model.searchOptions}}/>
-{{/if}}
-</div>
+{{outlet}}

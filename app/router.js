@@ -7,8 +7,11 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('tab', {path:"tab/"});
-  this.route('tab', {path:"tab/:tab_id"});
+  // this.route('tab', {path:"tab/:tab_id"});
+  this.route('tab', {path:"tab/:tab_id"}, function() {
+    this.route('index', {path:"/"});
+    this.route('detail', {path:"/:record_id"});
+  });
   this.route('all-settings');
   this.route('settings', {path:"settings/"});
   this.route('settings', function() {
