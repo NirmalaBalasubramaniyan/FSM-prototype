@@ -1,19 +1,36 @@
-<ul class="records-list-container">
+
+<div class="listview-top">
+        <ul>
+                <li class="fl"><a href="javascript:;" class="list-filter-icon">&nbsp;</a></li>
+                <li class="fl"><select style="margin-left: 15px;margin-top: 10px;"><option>All Appointment</option></select></li>
+                <li class="fr"><a href="javascript:;" class="green-cir-bg fl"><span class="list-more-icon">&nbsp;</span></a></li>
+                <li class="fr"><a href="javascript:;" class="primary-button fr">New Appointment</a></li>
+
+                
+        </ul>
+    </div>
+
+<div class="listview-header mt13">
 
 {{#each @columnKeys as |key|}}
-                <div class="item-column">
+               
+                <a href="javascript:;">
                      {{key}}
-                </div>
+                </a>
             {{/each}}
+            </div>
   {{#each @list as |record|}}
-    <li class="record-list-item">
-    	<LinkTo @route="tab.detail" @model={{record.Name}}>
+
+    <div class="listview-value">
+    	
+
     		{{#each @columnKeys as |key|}}
-                <div class="item-column">
+                <LinkTo @route="tab" class="item-column" @model={{record.Name}}>
     			     {{get record key}}
-                </div>
+               </LinkTo>
     		{{/each}}
-    	</LinkTo>
-    </li>
+    	
+    </div>
   {{/each}}
-</ul>
+
+
