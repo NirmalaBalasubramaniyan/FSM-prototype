@@ -7,8 +7,9 @@ var data = {"Contacts":[{"Name":"Shivaram","mail":"shivara@gmail.com","phone":"9
 var columns = ['Name', 'mail', 'phone', 'status', 'lead'];  // No i18N
 
 export default class TabIndexRoute extends Route {
-	model=function(passedInThing) {
+	model=function() {
 		var moduleName = 'Contacts';
+		var passedInThing = this.paramsFor('tab');
 		if(passedInThing != undefined && passedInThing.tab_id != undefined && data[passedInThing.tab_id] != undefined)
 			moduleName = passedInThing.tab_id;
 		return {
