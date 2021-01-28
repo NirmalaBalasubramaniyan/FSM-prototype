@@ -1,17 +1,11 @@
 <div class="w100per fL">
-  <!-- 	<button>Line Items</button>
-	<button>Notes</button> -->
-  <!-- <button type="button" class="tab-menu-button">Line Items</button> -->
-  <!-- <button type="button" {{on 'click' (fn this.showSubMenu 'notes')}} class="tab-menu-button">Notes</button> -->
-  <div class="menu-act" {{action "showLineitemTab"}}>Line Item</div>
-  <div class="menu-act" {{action "showNotesTab"}}>Notes</div>
+  <div class="menu-act" {{on 'click' (fn this.showMiddleTab "lineitem")}}>Line Item</div>
+  <div class="menu-act" {{on 'click' (fn this.showMiddleTab "notes")}}>Notes</div>
 </div>
 <div class="w100per fL mT15">
-  {{#if showLineitem}}
-  
+  {{#if (eq this.currentTab "lineitem")}}
   <DetailMiddlePanLineitem />
-  {{/if}}
-  {{#if showNotes}}
-  <!-- <DetailMiddlePanNotes /> -->
+  {{else if (eq this.currentTab "notes")}}
+  <DetailMiddlePanNotes />
   {{/if}}
 </div>

@@ -18,4 +18,6 @@ Router.map(function () {
   //   this.route('index', { path: '/index' });
   // })
   // this.route('settings', {path:"settings/:settings_path"});
+  this.route('create');
+  this.route('edit');
 });

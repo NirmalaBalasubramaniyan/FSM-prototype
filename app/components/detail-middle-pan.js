@@ -1,16 +1,12 @@
-import Ember from 'ember';
+import Component from '@glimmer/component';
+import { action } from '@ember/object';
+import { tracked } from "@glimmer/tracking";
 
-export default Ember.Component.extend({
-  actions: {
-    showLineitemTab() {
-      this.toggleProperty('showNotes');
-      this.toggleProperty('showLineitem');
-      // alert("d");
-    },
-    showNotesTab() {
-      this.toggleProperty('showNotes');
-      this.toggleProperty('showLineitem');
-      // alert("d");
-    }
-  }
-});
+export default class DetailMiddlePanComponent extends Component {
+	@tracked currentTab = "lineitem";
+  	@action
+  	showMiddleTab(tabHead, event) {
+    	this.currentTab = tabHead;
+	
+	}
+}

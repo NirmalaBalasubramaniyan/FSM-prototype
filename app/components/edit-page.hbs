@@ -1,0 +1,269 @@
+<div id="sa-detail" style="display: block;">
+  <div class="createPopupCont">
+    <div class="popHdrDiv">
+      <div class="popHdrtext f-light">Edit</div><button class="" onclick="history.back();">X</button>
+    </div>
+    <div class="content-wrap">
+      <div class="rft-custom-ele" data-instance="1"></div>
+      <div class="Hdrbtm" id="from-header"><span class="sectionHdr f-Semibold">Work Order Summary</span></div>
+      <ul class="col-layout" data-instance="2">
+        <li class="col-cont">
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Summary</span></div>
+            <div class="field-value mandatory formlistbox" data-instance="2" data-apiname="Work_Orders___Summary" data-apinameorg="Summary" data-datatype="textarea" data-dataval="new invoice"><textarea rows="2" cols="25" class="formboxText rf-valFld" data-fldapiname="Summary" name="textarea" id="Work_Orders___Summary" tabindex="1">new invoice</textarea></div>
+            <p class="infoLabel" id="Work_Orders___Summary_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont" style="display: none;">
+            <div class="field-label"><span class="fld-text">Status</span></div>
+            <div class="field-value mandatory selectfldvalue" data-instance="2" data-apiname="Work_Orders___Status" data-apinameorg="Status" data-datatype="picklist" data-dataval="Completed">
+              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Status" data-fldapiname="Status" value="Completed" style="display: none;">
+                  <option id="New" value="New">New</option>
+                  <option id="In Progress" value="In Progress">In Progress</option>
+                  <option id="Cannot Complete" value="Cannot Complete">Cannot Complete</option>
+                  <option id="Completed" value="Completed">Completed</option>
+                  <option id="Closed" value="Closed">Closed</option>
+                  <option id="Cancelled" value="Cancelled">Cancelled</option>
+                  <option id="Scheduled Appointment" value="Scheduled Appointment">Scheduled Appointment</option>
+                  <option id="Dispatched" value="Dispatched">Dispatched</option>
+                </select>
+                <div class="widget-select-styled select-selected-text-active">Completed</div><input type="hidden" value="Completed" id="widget_select_option_val">
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Status_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Priority</span></div>
+            <div class="field-value selectfldvalue" data-instance="2" data-apiname="Work_Orders___Priority" data-apinameorg="Priority" data-datatype="picklist">
+              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Priority" data-fldapiname="Priority" style="display: none;">
+                  <option id="-None-" value="-None-">-None-</option>
+                  <option id="Low" value="Low">Low</option>
+                  <option id="Medium" value="Medium">Medium</option>
+                  <option id="Critical" value="Critical">Critical</option>
+                  <option id="High" value="High">High</option>
+                </select>
+                <div class="widget-select-styled select-selected-text-active" tabindex="3">-None-</div><input type="hidden" value="-None-" id="widget_select_option_val">
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Priority_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Type</span></div>
+            <div class="field-value mandatory selectfldvalue" data-instance="2" data-apiname="Work_Orders___Type" data-apinameorg="Type" data-datatype="picklist" data-dataval="Service">
+              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Type" data-fldapiname="Type" value="Service" style="display: none;">
+                  <option id="Service" value="Service">Service</option>
+                  <option id="Inspection" value="Inspection">Inspection</option>
+                </select>
+                <div class="widget-select-styled select-selected-text-active" tabindex="4">Service</div><input type="hidden" value="Service" id="widget_select_option_val">
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Type_label2"></p>
+            <p class="errorText"></p>
+          </div>
+        </li>
+        <li class="col-cont">
+          <div class="field-cont" style="display: none;">
+            <div class="field-label"><span class="fld-text">Requests</span></div>
+            <div class="field-value" data-instance="2" data-apiname="Work_Orders___Request" data-apinameorg="Request" data-datatype="lookup" data-lookupmod="Requests">
+              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Request" name="lookup" id="Work_Orders___Request" autocomplete="off" readonly="readonly">
+                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon icon-interation"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Request_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont" style="display: none;">
+            <div class="field-label"><span class="fld-text">Parent Work Order</span></div>
+            <div class="field-value" data-instance="2" data-apiname="Work_Orders___Parent_Work_Order" data-apinameorg="Parent_Work_Order" data-datatype="lookup" data-lookupmod="Work_Orders">
+              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Parent_Work_Order" name="lookup" id="Work_Orders___Parent_Work_Order" autocomplete="off" readonly="readonly">
+                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon icon-interation"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Parent_Work_Order_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Work Orders Owner</span></div>
+            <div class="field-value inaciveMode" data-instance="2" data-apiname="Work_Orders___Owner" data-apinameorg="Owner" data-datatype="ownerlookup" data-dataval="[object Object]">
+              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Owner" name="lookup" id="Work_Orders___Owner" autocomplete="off" data-lookupid="4475960000000054001" readonly="readonly" tabindex="2">
+                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon zp-li-user-icon"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Owner_label2"></p>
+            <p class="errorText"></p>
+          </div>
+        </li>
+      </ul>
+      <div class="Hdrbtm" id="from-header"><span class="sectionHdr f-Semibold">Contact Details</span></div>
+      <ul class="col-layout" data-instance="2">
+        <li class="col-cont">
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Summary</span></div>
+            <div class="field-value mandatory formlistbox" data-instance="2" data-apiname="Work_Orders___Summary" data-apinameorg="Summary" data-datatype="textarea" data-dataval="test req_custom"><textarea rows="2" cols="25" class="formboxText rf-valFld" data-fldapiname="Summary" name="textarea" id="Work_Orders___Summary" tabindex="1">test req_custom</textarea></div>
+            <p class="infoLabel" id="Work_Orders___Summary_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont" style="display: none;">
+            <div class="field-label"><span class="fld-text">Status</span></div>
+            <div class="field-value mandatory selectfldvalue" data-instance="2" data-apiname="Work_Orders___Status" data-apinameorg="Status" data-datatype="picklist" data-dataval="Closed">
+              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Status" data-fldapiname="Status" value="Closed" style="display: none;">
+                  <option id="New" value="New">New</option>
+                  <option id="In Progress" value="In Progress">In Progress</option>
+                  <option id="Cannot Complete" value="Cannot Complete">Cannot Complete</option>
+                  <option id="Completed" value="Completed">Completed</option>
+                  <option id="Closed" value="Closed">Closed</option>
+                  <option id="Cancelled" value="Cancelled">Cancelled</option>
+                  <option id="Scheduled Appointment" value="Scheduled Appointment">Scheduled Appointment</option>
+                  <option id="Dispatched" value="Dispatched">Dispatched</option>
+                </select>
+                <div class="widget-select-styled select-selected-text-active">Closed</div><input type="hidden" value="Closed" id="widget_select_option_val">
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Status_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Priority</span></div>
+            <div class="field-value selectfldvalue" data-instance="2" data-apiname="Work_Orders___Priority" data-apinameorg="Priority" data-datatype="picklist">
+              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Priority" data-fldapiname="Priority" style="display: none;">
+                  <option id="-None-" value="-None-">-None-</option>
+                  <option id="Low" value="Low">Low</option>
+                  <option id="Medium" value="Medium">Medium</option>
+                  <option id="Critical" value="Critical">Critical</option>
+                  <option id="High" value="High">High</option>
+                </select>
+                <div class="widget-select-styled select-selected-text-active" tabindex="3">-None-</div><input type="hidden" value="-None-" id="widget_select_option_val">
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Priority_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Type</span></div>
+            <div class="field-value mandatory selectfldvalue" data-instance="2" data-apiname="Work_Orders___Type" data-apinameorg="Type" data-datatype="picklist" data-dataval="Service">
+              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Type" data-fldapiname="Type" value="Service" style="display: none;">
+                  <option id="Service" value="Service">Service</option>
+                  <option id="Inspection" value="Inspection">Inspection</option>
+                </select>
+                <div class="widget-select-styled select-selected-text-active" tabindex="5">Service</div><input type="hidden" value="Service" id="widget_select_option_val">
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Type_label2"></p>
+            <p class="errorText"></p>
+          </div>
+        </li>
+        <li class="col-cont">
+          <div class="field-cont" style="display: none;">
+            <div class="field-label"><span class="fld-text">Requests</span></div>
+            <div class="field-value" data-instance="2" data-apiname="Work_Orders___Request" data-apinameorg="Request" data-datatype="lookup" data-dataval="[object Object]" data-lookupmod="Requests">
+              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Request" name="lookup" id="Work_Orders___Request" autocomplete="off" data-lookupid="82000000393124" readonly="readonly">
+                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon icon-interation"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset" style="display: inline-block;"></button></div>
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Request_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont" style="display: none;">
+            <div class="field-label"><span class="fld-text">Parent Work Order</span></div>
+            <div class="field-value" data-instance="2" data-apiname="Work_Orders___Parent_Work_Order" data-apinameorg="Parent_Work_Order" data-datatype="lookup" data-lookupmod="Work_Orders">
+              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Parent_Work_Order" name="lookup" id="Work_Orders___Parent_Work_Order" autocomplete="off" readonly="readonly">
+                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon icon-interation"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Parent_Work_Order_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Work Orders Owner</span></div>
+            <div class="field-value inaciveMode" data-instance="2" data-apiname="Work_Orders___Owner" data-apinameorg="Owner" data-datatype="ownerlookup" data-dataval="[object Object]">
+              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Owner" name="lookup" id="Work_Orders___Owner" autocomplete="off" data-lookupid="82000000111671" readonly="readonly" tabindex="2">
+                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon zp-li-user-icon"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Owner_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">MultiLine_test</span></div>
+            <div class="field-value formlistbox" data-instance="2" data-apiname="Work_Orders___MultiLine_test__C" data-apinameorg="MultiLine_test__C" data-datatype="textarea"><textarea rows="2" cols="25" class="formboxText rf-valFld" data-fldapiname="MultiLine_test__C" name="textarea" id="Work_Orders___MultiLine_test__C" tabindex="4"></textarea></div>
+            <p class="infoLabel" id="Work_Orders___MultiLine_test__C_label2"></p>
+            <p class="errorText"></p>
+          </div>
+        </li>
+      </ul>
+      <div class="Hdrbtm" id="from-header"><span class="sectionHdr f-Semibold">Preferred Time</span></div>
+      <ul class="col-layout" data-instance="2">
+        <li class="col-cont">
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Preferred Slot</span></div>
+            <div class="field-value selectfldvalue" data-instance="2" data-apiname="Work_Orders___Preferred_Slot" data-apinameorg="Preferred_Slot" data-datatype="picklist" data-dataval="Preferred Time">
+              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Preferred_Slot" data-fldapiname="Preferred_Slot" value="Preferred Time" style="display: none;">
+                  <option id="-None-" value="-None-">-None-</option>
+                  <option id="Preferred Time" value="Preferred Time">Preferred Time</option>
+                  <option id="Weekdays" value="Weekdays">Weekdays</option>
+                </select>
+                <div class="widget-select-styled select-selected-text-active" tabindex="13">Preferred Time</div><input type="hidden" value="Preferred Time" id="widget_select_option_val">
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Preferred_Slot_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont" style="">
+            <div class="field-label"><span class="fld-text">Preferred Start Time</span></div>
+            <div class="field-value mandatory" data-instance="2" data-apiname="Work_Orders___Preferred_Start_Time" data-apinameorg="Preferred_Start_Time" data-datatype="datetime" data-dataval="2021-01-28T13:30:00+05:30"><input type="text" class="valueText rf-valFld" data-fldapiname="Preferred_Start_Time" name="datetime" id="Work_Orders___Preferred_Start_Time" autocomplete="off" placeholder="MMM D, Y hh:mm A" tabindex="15"></div>
+            <p class="infoLabel" id="Work_Orders___Preferred_Start_Time_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont" style="">
+            <div class="field-label"><span class="fld-text">Preferred End Time</span></div>
+            <div class="field-value mandatory" data-instance="2" data-apiname="Work_Orders___Preferred_End_Time" data-apinameorg="Preferred_End_Time" data-datatype="datetime" data-dataval="2021-01-28T13:45:00+05:30"><input type="text" class="valueText rf-valFld" data-fldapiname="Preferred_End_Time" name="datetime" id="Work_Orders___Preferred_End_Time" autocomplete="off" placeholder="MMM D, Y hh:mm A" tabindex="17"></div>
+            <p class="infoLabel" id="Work_Orders___Preferred_End_Time_label2"></p>
+            <p class="errorText"></p>
+          </div>
+        </li>
+        <li class="col-cont">
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Preference</span></div>
+            <div class="field-value formlistbox" data-instance="2" data-apiname="Work_Orders___Preference" data-apinameorg="Preference" data-datatype="textarea"><textarea rows="2" cols="25" class="formboxText rf-valFld" data-fldapiname="Preference" name="textarea" id="Work_Orders___Preference" tabindex="14"></textarea></div>
+            <p class="infoLabel" id="Work_Orders___Preference_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Due Date</span></div>
+            <div class="field-value" data-instance="2" data-apiname="Work_Orders___Due_Date" data-apinameorg="Due_Date" data-datatype="date"><input type="text" class="valueText rf-valFld" data-fldapiname="Due_Date" name="datetime" id="Work_Orders___Due_Date" autocomplete="off" placeholder="MMM D, Y" tabindex="16"></div>
+            <p class="infoLabel" id="Work_Orders___Due_Date_label2"></p>
+            <p class="errorText"></p>
+          </div>
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">CustomDateTime9</span></div>
+            <div class="field-value" data-instance="2" data-apiname="Work_Orders___CustomDateTime9__C" data-apinameorg="CustomDateTime9__C" data-datatype="datetime" data-dataval="2021-02-21T13:17:00+05:30"><input type="text" class="valueText rf-valFld" data-fldapiname="CustomDateTime9__C" name="datetime" id="Work_Orders___CustomDateTime9__C" autocomplete="off" placeholder="MMM D, Y hh:mm A" tabindex="18"></div>
+            <p class="infoLabel" id="Work_Orders___CustomDateTime9__C_label2"></p>
+            <p class="errorText"></p>
+          </div>
+        </li>
+      </ul>
+      <div class="Hdrbtm" id="from-header"><span class="sectionHdr f-Semibold">Asset Details</span></div>
+      <ul class="col-layout" data-instance="1">
+        <li class="col-cont">
+          <div class="field-cont">
+            <div class="field-label"><span class="fld-text">Asset</span></div>
+            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Asset" data-apinameorg="Asset" data-datatype="lookup" data-lookupmod="Assets">
+              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Asset" name="lookup" id="Work_Orders___Asset" autocomplete="off" readonly="readonly" tabindex="13">
+                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon zp-li-asset-icon"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
+              </div>
+            </div>
+            <p class="infoLabel" id="Work_Orders___Asset_label1"></p>
+            <p class="errorText"></p>
+          </div>
+        </li>
+      </ul>
+      <div style="width: 100%;">
+        <div id="saveBtn" class="BtnBG">
+          <div class="widthcontrol"><button class="secondaryBtn mR10" onclick="history.back();">Cancel</button><button class="primaryBtn zf-button zf-primary-btn" onclick="history.back();"><span class="zf-button-text">Save</span></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,83 +1,83 @@
 .tab-list-container {
-	list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    background: #111;
-    padding: 0px;
-    margin: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  background: #111;
+  padding: 0px;
+  margin: 0px;
 }
 
 .tab-menu {
-	margin: 10px;
+  margin: 10px;
 }
 
 .tab-menu-button {
-	border: 0px;
-    font-size: 20px;
-    background: #111;
-    color: white;
+  border: 0px;
+  font-size: 20px;
+  background: #111;
+  color: white;
 }
 
 .dialog-popup1 {
-	position: absolute;
-    width: 150px;
-    background: white;
-    z-index: 3;
-    display: none;
-    box-shadow: 0 0 20px rgba(0,0,0,.65), 0 0 1px 1px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    padding: 5px;
-    background: #545454;
-    margin-top: 5px;
+  position: absolute;
+  width: 150px;
+  background: white;
+  z-index: 3;
+  display: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .65), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  background: #545454;
+  margin-top: 5px;
 }
 
 .sub-menu-list-container {
-	list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
 
 .sub-menu-button {
-	border: 0px;
-    background: #545454;
-    color: white;
-    font-size: 15px;
-    text-align: left;
+  border: 0px;
+  background: #545454;
+  color: white;
+  font-size: 15px;
+  text-align: left;
 }
 
 .sub-menu-item {
-	padding: 5px;
+  padding: 5px;
 }
 
 .iframeContent {
-	width: 1000px;
-	height: 1000px;
+  width: 1000px;
+  height: 1000px;
 }
 
 .records-list-container {
-    width: 100%;
-    height: 400px;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+  width: 100%;
+  height: 400px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .record-list-item {
-    margin: 10px;
-    background: #e2e2e2;
-    padding: 20px;
+  margin: 10px;
+  background: #e2e2e2;
+  padding: 20px;
 }
 
 .record-list-item a {
-    margin: 10px;
-    background: #e2e2e2;
-    padding: 20px;
+  margin: 10px;
+  background: #e2e2e2;
+  padding: 20px;
 }
 
 .item-column {
-    padding: 0px 20px;
-    display: inline-block;
+  padding: 0px 20px;
+  display: inline-block;
 }
 
 
@@ -109,7 +109,7 @@
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 2F;
 }
 
 .leftPanC {
@@ -148,26 +148,72 @@
   grid-template-rows: auto auto;
   height: 100%;
 }
+
 .row-item {
-    border: 1px solid #dfdfdf;
-    background: white;
-    padding: 10px;
-    margin-bottom: 10px;
+  border: 1px solid #dfdfdf;
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
 }
-=======
->>>>>>> stash
 
 .menu-act {
   float: left;
-    padding: .3125rem 1rem .25rem;
-    box-sizing: border-box;
-    font-size: 1rem;
-    color: var(--clr3);
-    cursor: pointer;
-    border: 1px solid #e4e4e4;
-    position: relative;
+  padding: .3125rem 1rem .25rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: var(--clr3);
+  cursor: pointer;
+  border: 1px solid #e4e4e4;
+  position: relative;
 }
 
+.createPopupCont {
+  width: 90%;
+  /*padding: 20px;*/
+  background: var(--whiteclr);
+  position: relative;
+  height: 100vh;
+  transition: .3s ease-out;
+  overflow: hidden;
+  float: right;
+}
+
+.popup-header-wrap {
+  width: 100%;
+  padding: 1.125rem 1.5625rem;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.content-wrap {
+  width: 100%;
+  height: calc(100vh - 60px);
+  padding: 25px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
 
 
 
@@ -9011,371 +9057,416 @@ input[type="radio"]:checked+.radio-style:before {
 
 
 
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-ul, li
-    {
-        list-style-type: none;
-    }
-body
-    {
-        /*background: #edf0f4;*/
-        font-family: LatoRegular, sans-serif; 
-        font-size: 15px;
-    }
+
+ul,
+li {
+  list-style-type: none;
+}
+
+body {
+  /*background: #edf0f4;*/
+  font-family: LatoRegular, sans-serif;
+  font-size: 15px;
+}
 
 /** font style **/
 @font-face {
-font-family:"LatoThin";
-font-weight:200;
-font-style:normal;
-src:url("https://static.zohocdn.com/webfonts/lato2thin/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2thin/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2thin/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2thin/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2thin/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2thin/font.svg#Lato2-Thin") format("svg");
+  font-family: "LatoThin";
+  font-weight: 200;
+  font-style: normal;
+  src: url("https://static.zohocdn.com/webfonts/lato2thin/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2thin/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2thin/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2thin/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2thin/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2thin/font.svg#Lato2-Thin") format("svg");
 }
+
 @font-face {
-font-family:"LatoThinItalic";
-font-weight:200;
-font-style:italic;
-src:url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.svg#Lato2-ThinItalic") format("svg");
+  font-family: "LatoThinItalic";
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.svg#Lato2-ThinItalic") format("svg");
 }
-@font-face {    
-font-family:"LatoLight";
-font-weight:300;
-font-style:normal;
-src:url("https://static.zohocdn.com/webfonts/lato2light/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2light/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2light/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2light/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2light/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2light/font.svg#Lato2-Light") format("svg");
-}
+
 @font-face {
-font-family:"LatoLightItalic";
-font-weight:300;
-font-style:italic;
-src:url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.svg#Lato2-LightItalic") format("svg");
+  font-family: "LatoLight";
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://static.zohocdn.com/webfonts/lato2light/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2light/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2light/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2light/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2light/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2light/font.svg#Lato2-Light") format("svg");
 }
+
 @font-face {
-font-family:"LatoRegular";
-font-weight:400;
-font-style:normal;
-src:url("https://static.zohocdn.com/webfonts/latoregular/font.eot");
-src:url("https://static.zohocdn.com/webfonts/latoregular/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/latoregular/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/latoregular/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/latoregular/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/latoregular/font.svg#Lato-Regular") format("svg");
+  font-family: "LatoLightItalic";
+  font-weight: 300;
+  font-style: italic;
+  src: url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2lightitalic/font.svg#Lato2-LightItalic") format("svg");
 }
+
 @font-face {
-font-family:"LatoItalic";
-font-weight:400;
-font-style:italic;
-src:url("https://static.zohocdn.com/webfonts/lato2italic/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2italic/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2italic/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2italic/font.woff") format("woff"),
-url("https:https://static.zohocdn.com/webfonts/lato2italic/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2italic/font.svg#Lato2-Italic") format("svg");
+  font-family: "LatoRegular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://static.zohocdn.com/webfonts/latoregular/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/latoregular/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/latoregular/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/latoregular/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/latoregular/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/latoregular/font.svg#Lato-Regular") format("svg");
 }
+
 @font-face {
-font-family:"LatoMedium";
-font-weight:500;
-font-style:normal;
-src:url("https://static.zohocdn.com/webfonts/lato2medium/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2medium/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2medium/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2medium/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2medium/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2medium/font.svg#Lato2-Medium") format("svg");
+  font-family: "LatoItalic";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://static.zohocdn.com/webfonts/lato2italic/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2italic/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2italic/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2italic/font.woff") format("woff"),
+    url("https:https://static.zohocdn.com/webfonts/lato2italic/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2italic/font.svg#Lato2-Italic") format("svg");
 }
+
 @font-face {
-font-family:"LatoMediumItalic";
-font-weight:500;
-font-style:italic;
-src:url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.eot");
-src:url("//static.zohocdn.com/webfonts/lato2mediumitalic/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.svg#Lato2-MediumItalic") format("svg");
+  font-family: "LatoMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://static.zohocdn.com/webfonts/lato2medium/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2medium/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2medium/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2medium/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2medium/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2medium/font.svg#Lato2-Medium") format("svg");
 }
+
 @font-face {
-font-family:"LatoSemibold";
-font-weight:600;
-font-style:normal;
-src:url("https://static.zohocdn.com/webfonts/lato2semibold/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2semibold/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2semibold/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2semibold/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2semibold/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2semibold/font.svg#Lato2-Semibold") format("svg");
+  font-family: "LatoMediumItalic";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.eot");
+  src: url("//static.zohocdn.com/webfonts/lato2mediumitalic/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2mediumitalic/font.svg#Lato2-MediumItalic") format("svg");
 }
+
 @font-face {
-font-family:"LatoSemiboldItalic";
-font-weight:600;
-font-style:italic;
-src:url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.svg#Lato2-SemiboldItalic") format("svg");
+  font-family: "LatoSemibold";
+  font-weight: 600;
+  font-style: normal;
+  src: url("https://static.zohocdn.com/webfonts/lato2semibold/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2semibold/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2semibold/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2semibold/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2semibold/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2semibold/font.svg#Lato2-Semibold") format("svg");
 }
+
 @font-face {
-font-family:"LatoBold";
-font-weight:700;
-font-style:normal;
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.svg#Lato2-Bold") format("svg");
+  font-family: "LatoSemiboldItalic";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2semibolditalic/font.svg#Lato2-SemiboldItalic") format("svg");
 }
+
 @font-face {
-font-family:"LatoBoldItalic";
-font-weight:700;
-font-style:italic;
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.svg#Lato2-BoldItalic") format("svg");
+  font-family: "LatoBold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/latobold/font.svg#Lato2-Bold") format("svg");
 }
+
 @font-face {
-font-family:"LatoBlack";
-font-weight:800;
-font-style:normal;
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.svg#Lato2-Black") format("svg");
+  font-family: "LatoBoldItalic";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2bolditalic/font.svg#Lato2-BoldItalic") format("svg");
 }
+
 @font-face {
-font-family:"LatoBlackItalic";
-font-weight:800;
-font-style:italic;
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.svg#Lato2-BlackItalic") format("svg");
+  font-family: "LatoBlack";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2black/font.svg#Lato2-Black") format("svg");
 }
+
 @font-face {
-font-family:"LatoHeavy";
-font-weight:800;
-font-style:normal;
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.svg#Lato2-Heavy") format("svg");
+  font-family: "LatoBlackItalic";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2blackitalic/font.svg#Lato2-BlackItalic") format("svg");
 }
+
 @font-face {
-font-family:"LatoHeavyItalic";
-font-weight:800;
-font-style:italic;
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot");
-src:url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot?#iefix") format("eot"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.woff2") format("woff2"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.woff") format("woff"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.ttf") format("truetype"),
-url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.svg#Lato2-HeavyItalic") format("svg");
+  font-family: "LatoHeavy";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot//static.zohocdn.com/webfonts/lato2heavy/font.svg#Lato2-Heavy") format("svg");
 }
-.crm-font-regular,.ProximaNovaRegular,.ProximaNovaLight,.ProximaNovaThin {
-font-family: LatoRegular, sans-serif;
+
+@font-face {
+  font-family: "LatoHeavyItalic";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot");
+  src: url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.eot?#iefix") format("eot"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.woff2") format("woff2"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.woff") format("woff"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.ttf") format("truetype"),
+    url("https://static.zohocdn.com/webfonts/lato2heavyitalic/font.svg#Lato2-HeavyItalic") format("svg");
 }
-.ProximaNovaSemibold,.crm-font-bold{
-font-family: LatoBold, sans-serif;
+
+.crm-font-regular,
+.ProximaNovaRegular,
+.ProximaNovaLight,
+.ProximaNovaThin {
+  font-family: LatoRegular, sans-serif;
 }
-.crm-font-xbold,.ProximaNovaBold{
-font-family: LatoBlack, sans-serif;
+
+.ProximaNovaSemibold,
+.crm-font-bold {
+  font-family: LatoBold, sans-serif;
 }
-.crm-font-xbold,.ProximaNovaXbold{
-font-family: LatoBlack, sans-serif;
+
+.crm-font-xbold,
+.ProximaNovaBold {
+  font-family: LatoBlack, sans-serif;
 }
-.ProximaNovaThinItalic,.ProximaNovaLightItalic,.crm-font-regular-italic ,.ProximaNovaRegularItalic{
-font-family: LatoItalic,sans-serif;
+
+.crm-font-xbold,
+.ProximaNovaXbold {
+  font-family: LatoBlack, sans-serif;
 }
-.crm-font-bold-italic,.ProximaNovaSemiboldItalic {
-font-family: LatoBoldItalic,sans-serif;
+
+.ProximaNovaThinItalic,
+.ProximaNovaLightItalic,
+.crm-font-regular-italic,
+.ProximaNovaRegularItalic {
+  font-family: LatoItalic, sans-serif;
 }
-.crm-font-xbold-italic,.ProximaNovaXboldItalic,.ProximaNovaBoldItalic {
-font-family: LatoBlackItalic,sans-serif;
+
+.crm-font-bold-italic,
+.ProximaNovaSemiboldItalic {
+  font-family: LatoBoldItalic, sans-serif;
 }
-.crm-font-thin{
-font-family:LatoThin,sans-serif;
+
+.crm-font-xbold-italic,
+.ProximaNovaXboldItalic,
+.ProximaNovaBoldItalic {
+  font-family: LatoBlackItalic, sans-serif;
 }
-.crm-font-light{
-font-family: LatoLight, sans-serif;
+
+.crm-font-thin {
+  font-family: LatoThin, sans-serif;
 }
-.crm-font-medium{
-font-family:LatoMedium,sans-serif;
+
+.crm-font-light {
+  font-family: LatoLight, sans-serif;
 }
-.crm-font-semibold{
-font-family:LatoSemibold,sans-serif;
+
+.crm-font-medium {
+  font-family: LatoMedium, sans-serif;
 }
-.crm-font-thin-italic{
-font-family:LatoThinItalic,sans-serif;
+
+.crm-font-semibold {
+  font-family: LatoSemibold, sans-serif;
 }
+
+.crm-font-thin-italic {
+  font-family: LatoThinItalic, sans-serif;
+}
+
 .crm-font-light-italic {
-font-family: LatoLightItalic,sans-serif;
+  font-family: LatoLightItalic, sans-serif;
 }
-.crm-font-medium-italic{
-font-family:"LatoMediumItalic",sans-serif;
+
+.crm-font-medium-italic {
+  font-family: "LatoMediumItalic", sans-serif;
 }
-.crm-font-semibold-italic{
-font-family:"LatoSemiboldItalic",sans-serif;
+
+.crm-font-semibold-italic {
+  font-family: "LatoSemiboldItalic", sans-serif;
 }
+
 /* end font style */
 
 
 
 
-.tab-grp
-{
-    overflow: auto;
-    background: #1F2532;
+.tab-grp {
+  overflow: auto;
+  background: #1F2532;
 }
-.setting-icon, .add-icon
-    {
-        background:  url('../images/bigin-svgicon-new.svg');
-        
-    }
-    .setting-icon
-    {
-        overflow: auto;
-        height:58px;
-        width: 40px;
-        background-position: 0px 6px;
-        margin-right: 10px;
-        display: inherit;
-        float: right;   
-    }
-    .add-icon
-    {
-        overflow: auto;
-height: 44px;
-width: 25px;
-background-position: -288px -66px;
-margin-right: 10px;
-display: inherit;
-float: right;
-margin-top: 6px;  
-    }
+
+.setting-icon,
+.add-icon {
+  background: url('../images/bigin-svgicon-new.svg');
+
+}
+
+.setting-icon {
+  overflow: auto;
+  height: 58px;
+  width: 40px;
+  background-position: 0px 6px;
+  margin-right: 10px;
+  display: inherit;
+  float: right;
+}
+
+.add-icon {
+  overflow: auto;
+  height: 44px;
+  width: 25px;
+  background-position: -288px -66px;
+  margin-right: 10px;
+  display: inherit;
+  float: right;
+  margin-top: 6px;
+}
 
 
 .tab-list-container {
   list-style-type: none;
-    /*display: flex;
+  /*display: flex;
     flex-direction: row;*/
-    background: #1f2532;
-    padding: 0px;
-    margin: 0px;
+  background: #1f2532;
+  padding: 0px;
+  margin: 0px;
 }
-.tab-search
-{
-    border-radius: 20px;
-    height:28px;
-    margin-top: 5px;
-    border:none;
-    background: #dfe6f4;
-    width: 150px;
+
+.tab-search {
+  border-radius: 20px;
+  height: 28px;
+  margin-top: 5px;
+  border: none;
+  background: #dfe6f4;
+  width: 150px;
 }
 
 
 .clicksearch {
-  -webkit-transition: all .2s ease;  
-  -moz-transition: all .2s ease;  
-  -o-transition: all .2s ease;  
-  -ms-transition: all .2s ease;  
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
   transition: all .2s ease;
 }
 
 .tab-search-active {
   width: 250px;
 }
-  
+
 
 
 .tab-menu {
   margin: 10px;
-    float: left;
+  float: left;
 }
 
 .tab-menu-button {
   border: 0px;
-    font-size:15px;
-    background: #1f2532;
-    color: white;
-    padding: 10px 5px;
-    font-family: inherit;
+  font-size: 15px;
+  background: #1f2532;
+  color: white;
+  padding: 10px 5px;
+  font-family: inherit;
 }
 
 .dialog-popup1 {
   position: absolute;
-    width: 170px;
-    background: white;
-    z-index: 3;
-    /*display: none;*/
-    /*box-shadow: 0 0 20px rgba(0,0,0,.65), 0 0 1px 1px rgba(0,0,0,0.1);*/
-    /*border-radius: 5px;*/
-    /*padding:10px;*/
-    background: #1f2532;
-    /*margin-top: 5px;*/
-    top:58px;
+  width: 170px;
+  background: white;
+  z-index: 3;
+  /*display: none;*/
+  /*box-shadow: 0 0 20px rgba(0,0,0,.65), 0 0 1px 1px rgba(0,0,0,0.1);*/
+  /*border-radius: 5px;*/
+  /*padding:10px;*/
+  background: #1f2532;
+  /*margin-top: 5px;*/
+  top: 58px;
 }
 
 .sub-menu-list-container {
   list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    border-top: solid 1px #525763;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  border-top: solid 1px #525763;
 }
 
 .sub-menu-button {
   border: 0px;
-    background: #1f2532;
-    color: white;
-    font-size: 15px;
-    text-align: left;
+  background: #1f2532;
+  color: white;
+  font-size: 15px;
+  text-align: left;
 }
 
 .sub-menu-item {
   padding: 5px;
-    border-bottom: solid 1px #525763;
+  border-bottom: solid 1px #525763;
 }
-.sub-menu-item a
-{
-    /*padding: 10px;*/
+
+.sub-menu-item a {
+  /*padding: 10px;*/
 }
-.sub-menu-item button
-{
-    padding: 10px;
-    cursor: pointer;
+
+.sub-menu-item button {
+  padding: 10px;
+  cursor: pointer;
 }
+
 .iframeContent {
   width: 1000px;
   height: 1000px;
@@ -9383,28 +9474,28 @@ margin-top: 6px;
 
 
 .records-list-container {
-    width: 100%;
-    height: 400px;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+  width: 100%;
+  height: 400px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .record-list-item {
-    margin: 10px;
-    background: #e2e2e2;
-    padding: 20px;
+  margin: 10px;
+  background: #e2e2e2;
+  padding: 20px;
 }
 
 .record-list-item a {
-    margin: 10px;
-    background: #e2e2e2;
-    padding: 20px;
+  margin: 10px;
+  background: #e2e2e2;
+  padding: 20px;
 }
 
 .item-column {
-    padding: 0px 20px;
-    display: inline-block;
+  padding: 0px 20px;
+  display: inline-block;
 }
 
 
@@ -9417,166 +9508,164 @@ margin-top: 6px;
 
 /* settings page css */
 
-        .setup-tit, .lft-setup-tit
-        {
-            font-size: 24px;
-           
-            font-family:"LatoMedium";
-            
-        }
-        .setup-search
-        {
-            padding: 7px 10px;
-            height: auto;
-            position: relative;
-            z-index: 1;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            width: 220px;
-            font-size: 16px;
+.setup-tit,
+.lft-setup-tit {
+  font-size: 24px;
 
-        }
-        .setup-search:focus {
-            border: 1px solid #fff;
-        }   
-        .setlinkarea
-        {
-            background:  url('../img/setup-page-pattern.svg') #edf0f4;
-            background-repeat: repeat-x;
-            overflow: auto;
-            height: 100%;
-            width: 100%;
+  font-family: "LatoMedium";
 
-        }
-        .setupbox
-        {
-            width: 200px;
-            padding:20px;
-            border-radius: 12px;
-            border: solid 1px #d9e0eb;
-            overflow: auto;
-            background: #fff;
-            min-height: 220px;
-            float: left;
-            margin-left: 15px;
-            margin-top: 15px;
+}
 
-        }
-        .setupbox h3
-        {
-            color: #313949;
-            font-style:normal;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        .setupbox a
-        {
-            color:#313949;
-            text-decoration: none;
-            font-size: 16px;
-            margin:5px 0;
-            clear: both;
-            float: left;
-        }
-        .setupbox a:hover
-        {
-            color:#338cf0;
-        }
+.setup-search {
+  padding: 7px 10px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 220px;
+  font-size: 16px;
+
+}
+
+.setup-search:focus {
+  border: 1px solid #fff;
+}
+
+.setlinkarea {
+  background: url('../img/setup-page-pattern.svg') #edf0f4;
+  background-repeat: repeat-x;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+
+}
+
+.setupbox {
+  width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  border: solid 1px #d9e0eb;
+  overflow: auto;
+  background: #fff;
+  min-height: 220px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+
+}
+
+.setupbox h3 {
+  color: #313949;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.setupbox a {
+  color: #313949;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 5px 0;
+  clear: both;
+  float: left;
+}
+
+.setupbox a:hover {
+  color: #338cf0;
+}
 
 
 
 
-       
-        .setup-left
-       
-        {
-            background: #eee;
-            width:260px;
-            border-right: solid 1px #1f2532;
-            padding:20px 10px 0 30px;
-            box-sizing: border-box;
-            float: left;
-            clear:both;
-        }
-        .setup-lft-menu
-        {
-            
-            padding: 10px;
-            
-            float: left;
-        }
-        .setup-right
-        {
-            float: left;
-            width: calc(100% - 260px);
-        }
-        .setup-lft-menu h3
-        {
-            font-size: 16px;
-            margin-top: 5px;
-        }
-        .setup-lft-menu a
-        {
-            text-decoration: none;
-            margin-top:20px;
-            float: left;
-            clear: both;
-            color:#222;
 
-        }
-        .setup-lft-menu a.sel
-        {
-            color: #338cf0;
-        }
-        .setup-lft-menu li
-        {
-            margin-top: 3px;
-            
-        }
+.setup-left {
+  background: #eee;
+  width: 260px;
+  border-right: solid 1px #1f2532;
+  padding: 20px 10px 0 30px;
+  box-sizing: border-box;
+  float: left;
+  clear: both;
+}
 
-        .listdiv{
-    display: none;
-    flex-flow: column nowrap;
-    justify-content: center;
-    clear: both;
-    margin-left: 40px;
-  } 
+.setup-lft-menu {
 
-  .lft-setup-search
-        {
-            padding: 7px 10px;
-            height: auto;
-            position: relative;
-            z-index: 1;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            width: 170px;
-            font-size: 16px;
-            background: #eee;
+  padding: 10px;
 
-        }
-        .lft-setup-search:focus
-        {
-            background: #fff;
-        }
-        .lft-setup-tit
-        {
-            margin-top:40px;
-            font-size: 20px;
-        }
-        .setup-tab
-        {
-            border-bottom: solid 1px #ddd;
-            padding-bottom: 10px;
-            padding-top: 28px;
-            padding-left: 30px;
-        }
-        .setup-tab a
-        {
-                margin: 0 10px;
-                color: #222;
-                text-decoration: none;
-        }
+  float: left;
+}
+
+.setup-right {
+  float: left;
+  width: calc(100% - 260px);
+}
+
+.setup-lft-menu h3 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.setup-lft-menu a {
+  text-decoration: none;
+  margin-top: 20px;
+  float: left;
+  clear: both;
+  color: #222;
+
+}
+
+.setup-lft-menu a.sel {
+  color: #338cf0;
+}
+
+.setup-lft-menu li {
+  margin-top: 3px;
+
+}
+
+.listdiv {
+  display: none;
+  flex-flow: column nowrap;
+  justify-content: center;
+  clear: both;
+  margin-left: 40px;
+}
+
+.lft-setup-search {
+  padding: 7px 10px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 170px;
+  font-size: 16px;
+  background: #eee;
+
+}
+
+.lft-setup-search:focus {
+  background: #fff;
+}
+
+.lft-setup-tit {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.setup-tab {
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 10px;
+  padding-top: 28px;
+  padding-left: 30px;
+}
+
+.setup-tab a {
+  margin: 0 10px;
+  color: #222;
+  text-decoration: none;
+}
 
 
 
@@ -9585,106 +9674,116 @@ margin-top: 6px;
 
 
 
-        /***     Common CSS ***/
-        .mT10
-        {
-            margin-top: 10px;
-        }
-        .fr
-        {
-            float: right;
-        }
-        .fl{
-            float: left;
-        }
-        .cb
-        {
-            clear: both;
-        }
-        .ml20
-        {
-            margin-left: 20px;
-        }
-        .mt20
-        {
-            margin-top: 20px;
-        }
-        .p16
-        {
-            padding: 16px;
-        }
-        .sec-btn
-        {
-            text-decoration: none;
-            /*background: #fff;*/
-            padding: 5px 20px;
-            color: #222833;
-            box-shadow: 0 -1px 0 0 #d0d4df inset !important;
-            border-radius: 4px;
-            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfdff+0,ebeff5+100 */
-            background: #fcfdff; /* Old browsers */
-            background: -moz-linear-gradient(top,  #fcfdff 0%, #ebeff5 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top,  #fcfdff 0%,#ebeff5 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom,  #fcfdff 0%,#ebeff5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfdff', endColorstr='#ebeff5',GradientType=0 ); /* IE6-9 */
-            border: solid 1px #d0d4df;
-        }
+/***     Common CSS ***/
+.mT10 {
+  margin-top: 10px;
+}
 
-        .sec-btn:hover
-        {
-            
-            background: transparent linear-gradient(#fcfdff 0,#dee5f1 100%) 0 0 no-repeat padding-box !important;
-        }
-        /**   End common css **/
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.cb {
+  clear: both;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.p16 {
+  padding: 16px;
+}
+
+.sec-btn {
+  text-decoration: none;
+  /*background: #fff;*/
+  padding: 5px 20px;
+  color: #222833;
+  box-shadow: 0 -1px 0 0 #d0d4df inset !important;
+  border-radius: 4px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfdff+0,ebeff5+100 */
+  background: #fcfdff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fcfdff 0%, #ebeff5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fcfdff 0%, #ebeff5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fcfdff 0%, #ebeff5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfdff', endColorstr='#ebeff5', GradientType=0);
+  /* IE6-9 */
+  border: solid 1px #d0d4df;
+}
+
+.sec-btn:hover {
+
+  background: transparent linear-gradient(#fcfdff 0, #dee5f1 100%) 0 0 no-repeat padding-box !important;
+}
+
+/**   End common css **/
 
 
 /** list page css **/
-.list-filter-icon
-    {
-        background: url(img/fsm-svgicon.svg) #e4f1eb no-repeat;
-        vertical-align: top;
-        background-position: -359px -426px;
-        width: 16px;
-        height: 12px;
-        float: left;
-    }
-    .listview-header
-    {
-        clear: both;
-    }
-    .listview-value
-    {
-        clear: both;
-    }
-    .listview-top
-    {
-        padding:0 20px;
-    }
-    .listview-header li
-    {
-        background: #fbfcfd;
-        border-bottom: 3px double #dce1e6;
-        border-top: 1px solid #f0f5f8;
-        padding: 9px 60px 7px 10px;
-    }
-    .listview-value li
-    {
-        border-bottom: 1px solid #f0f5f8;
-        padding: 7px 45px 7px 10px;
-    }
-    .listview-header li, .listview-value li
-    {
-        width:15%;
-/*      -webkit-column-break-inside: avoid;
+.list-filter-icon {
+  background: url(img/fsm-svgicon.svg) #e4f1eb no-repeat;
+  vertical-align: top;
+  background-position: -359px -426px;
+  width: 16px;
+  height: 12px;
+  float: left;
+}
+
+.listview-header {
+  clear: both;
+}
+
+.listview-value {
+  clear: both;
+}
+
+.listview-top {
+  padding: 0 20px;
+}
+
+.listview-header li {
+  background: #fbfcfd;
+  border-bottom: 3px double #dce1e6;
+  border-top: 1px solid #f0f5f8;
+  padding: 9px 60px 7px 10px;
+}
+
+.listview-value li {
+  border-bottom: 1px solid #f0f5f8;
+  padding: 7px 45px 7px 10px;
+}
+
+.listview-header li,
+.listview-value li {
+  width: 15%;
+  /*      -webkit-column-break-inside: avoid;
           page-break-inside: avoid;
                break-inside: avoid;
-*/  }
-    .listview-header p, .listview-value p,.listview-header a, .listview-value a
-    {
-        font-size: 16px;
-        color: #232323;
-        text-decoration: none;
-    }
+*/
+}
+
+.listview-header p,
+.listview-value p,
+.listview-header a,
+.listview-value a {
+  font-size: 16px;
+  color: #232323;
+  text-decoration: none;
+}
+
 /* end list page css */
 
 
@@ -9693,101 +9792,106 @@ margin-top: 6px;
 
 
 /* list page styles start here */
-.list-filter-icon, .list-more-icon
-  {
-    background: url(img/fsm-svgicon.svg) #e4f1eb no-repeat;
-    
-  }
-  .list-filter-icon
-  {
-    background-position: -348px -411px;
-    width: 38px;
-    height: 38px;
-    float: left;
-    text-decoration: none;
-    border-radius: 20px;
-  }
-  .list-more-icon
-  {
-    background-position: -240px -423px;
-width: 23px;
-height: 16px;
-float: left;
-text-decoration: none;
-border-radius: 20px;
-margin-top: 12px;
-margin-left: 9px;
-  }
-  .listview-header
-  {
-    clear: both;
-  }
-  .listview-value
-  {
-    clear: both;
-  }
-  .listview-top
-  {
-    padding:0 20px;
-    margin-top: 30px;
-  }
-  .listview-header a
-  {
-    background: #fbfcfd;
-    border-bottom: 3px double #dce1e6;
-    border-top: 1px solid #f0f5f8;
-    padding:10px 45px 10px 10px;
-    display: inline-block;
-  }
-  .listview-value a
-  {
-    border-bottom: 1px solid #f0f5f8;
-    padding:11px 45px 11px 10px;
-    display: inline-block;
-  }
-  .listview-header li, .listview-value li
-  {
-    width:15%;
-/*    -webkit-column-break-inside: avoid;
+.list-filter-icon,
+.list-more-icon {
+  background: url(img/fsm-svgicon.svg) #e4f1eb no-repeat;
+
+}
+
+.list-filter-icon {
+  background-position: -348px -411px;
+  width: 38px;
+  height: 38px;
+  float: left;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.list-more-icon {
+  background-position: -240px -423px;
+  width: 23px;
+  height: 16px;
+  float: left;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 12px;
+  margin-left: 9px;
+}
+
+.listview-header {
+  clear: both;
+}
+
+.listview-value {
+  clear: both;
+}
+
+.listview-top {
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+.listview-header a {
+  background: #fbfcfd;
+  border-bottom: 3px double #dce1e6;
+  border-top: 1px solid #f0f5f8;
+  padding: 10px 45px 10px 10px;
+  display: inline-block;
+}
+
+.listview-value a {
+  border-bottom: 1px solid #f0f5f8;
+  padding: 11px 45px 11px 10px;
+  display: inline-block;
+}
+
+.listview-header li,
+.listview-value li {
+  width: 15%;
+  /*    -webkit-column-break-inside: avoid;
           page-break-inside: avoid;
                break-inside: avoid;
-*/  }
-  .listview-header p, .listview-value p,.listview-header a, .listview-value a
-  {
-    font-size: 15px;
-    color: #555;
-    text-decoration: none;
-    width: 12%;
-  }
-  .listview-header a:hover, .listview-value a:hover
-  {
-    color: #000;
-  }
+*/
+}
 
-  .primary-button
-  {
-    text-decoration: none;
-    color: #fff;
-    border-radius:20px;
-    padding:10px 20px;
-    background-color: #23ae73;
-    background-image: linear-gradient(to top,#11995f,#11995f 1%,#27b679);
+.listview-header p,
+.listview-value p,
+.listview-header a,
+.listview-value a {
+  font-size: 15px;
+  color: #555;
+  text-decoration: none;
+  width: 12%;
+}
 
-  }
-  .green-cir-bg
-  {
-    background: #e4f1eb;
-width: 40px;
-height: 40px;
-border-radius: 20px;
-margin-left:20px;
-  }
-  .listview-value:hover
-  {
-    background: #f5f8fa;
-  }
+.listview-header a:hover,
+.listview-value a:hover {
+  color: #000;
+}
 
-  /* end lisgt style ehre */
+.primary-button {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #23ae73;
+  background-image: linear-gradient(to top, #11995f, #11995f 1%, #27b679);
+
+}
+
+.green-cir-bg {
+  background: #e4f1eb;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.listview-value:hover {
+  background: #f5f8fa;
+}
+
+/* end lisgt style ehre */
 
 
 /*   prabhu style start */
