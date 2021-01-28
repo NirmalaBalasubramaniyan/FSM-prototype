@@ -13,9 +13,9 @@ Router.map(function () {
     this.route('detail', {path:"/:record_id"});
   });
   this.route('all-settings');
-  this.route('settings', {path:"settings/"});
-  // this.route('settings', function() {
-  //   this.route('index', { path: '/index' });
-  // })
-  // this.route('settings', {path:"settings/:settings_path"});
+  this.route('setting', {path:"settings/:settings_path"});
+  this.route('settings', {path:"settings/"}, function() {
+    this.route('index', { path: '/' });
+    // this.route('setting', { path: '/:settings_path' });
+  })  
 });

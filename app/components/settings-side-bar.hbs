@@ -1,1 +1,15 @@
-settings side bar
+<div class="side-stg-group">
+	<div class="side-stg-title"><h2>Settings</h2></div>
+	<div class="stg-group-list">
+	{{#each @value as |stgGrp|}}
+		<ul class="stg-group">
+			<b><li class="stg-title" {{on "click" this.toggleSubSettings}}>{{stgGrp.title}}</li></b>
+			<div class="side-stg-submenus" style="display: none">
+			{{#each stgGrp.submenus as |stgItem|}}
+				<li class="stg-item"><LinkTo @route="setting" @model={{stgItem.url}}>{{stgItem.title}}</LinkTo></li>
+			{{/each}}
+			</div>
+		</ul>
+	{{/each}}
+</div>
+</div>
