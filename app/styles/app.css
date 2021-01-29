@@ -7100,8 +7100,8 @@ input[type="radio"]:checked+.radio-style:before {
 .info-content-wrap {
   width: calc(100% - 3.125rem);
   padding: 0.625rem;
-  border-radius: 0 5px 5px 0;
   display: flex;
+  border-radius: 0 5px 5px 0;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-self: center;
@@ -9022,7 +9022,7 @@ ul, li
 body
     {
         /*background: #edf0f4;*/
-        font-family: LatoRegular, sans-serif; 
+        font-family: LatoRegular, sans-serif;
         font-size: 15px;
     }
 
@@ -9049,7 +9049,7 @@ url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.woff") format("wof
 url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.ttf") format("truetype"),
 url("https://static.zohocdn.com/webfonts/lato2thinitalic/font.svg#Lato2-ThinItalic") format("svg");
 }
-@font-face {    
+@font-face {
 font-family:"LatoLight";
 font-weight:300;
 font-style:normal;
@@ -9261,7 +9261,7 @@ font-family:"LatoSemiboldItalic",sans-serif;
 .setting-icon, .add-icon
     {
         background:  url('../images/bigin-svgicon-new-2.svg');
-        
+
     }
     .setting-icon
     {
@@ -9271,7 +9271,7 @@ font-family:"LatoSemiboldItalic",sans-serif;
         background-position: -40px 5px;
         margin-right: 10px;
         display: inherit;
-        float: right;   
+        float: right;
     }
     .add-icon
     {
@@ -9282,7 +9282,7 @@ background-position: -10px -1px;
 margin-right: 13px;
 display: inherit;
 float: right;
-margin-top: 6px;  
+margin-top: 6px;
     }
 
 
@@ -9306,17 +9306,17 @@ margin-top: 6px;
 
 
 .clicksearch {
-  -webkit-transition: all .2s ease;  
-  -moz-transition: all .2s ease;  
-  -o-transition: all .2s ease;  
-  -ms-transition: all .2s ease;  
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
   transition: all .2s ease;
 }
 
 .tab-search-active {
   width: 250px;
 }
-  
+
 
 
 .tab-menu {
@@ -9440,9 +9440,9 @@ li.tab-menu:hover
         .setup-tit, .lft-setup-tit
         {
             font-size: 24px;
-           
+
             font-family:"LatoMedium";
-            
+
         }
         .setup-search
         {
@@ -9459,7 +9459,7 @@ li.tab-menu:hover
         }
         .setup-search:focus {
             border: 1px solid #fff;
-        }   
+        }
         .setlinkarea
         {
             background:  url('../img/setup-page-pattern.svg') #edf0f4;
@@ -9507,9 +9507,9 @@ li.tab-menu:hover
 
 
 
-       
+
         .setup-left
-       
+
         {
             background: #eee;
             width:260px;
@@ -9521,9 +9521,9 @@ li.tab-menu:hover
         }
         .setup-lft-menu
         {
-            
+
             padding: 10px;
-            
+
             float: left;
         }
         .setup-right
@@ -9552,7 +9552,7 @@ li.tab-menu:hover
         .setup-lft-menu li
         {
             margin-top: 3px;
-            
+
         }
 
         .listdiv{
@@ -9561,7 +9561,7 @@ li.tab-menu:hover
     justify-content: center;
     clear: both;
     margin-left: 40px;
-  } 
+  }
 
   .lft-setup-search
         {
@@ -9653,7 +9653,7 @@ li.tab-menu:hover
 
         .sec-btn:hover
         {
-            
+
             background: transparent linear-gradient(#fcfdff 0,#dee5f1 100%) 0 0 no-repeat padding-box !important;
         }
 
@@ -9879,7 +9879,7 @@ font-size: 16px;
     /*margin-top: 90px;*/
   }
 .list-start-div
-{ 
+{
   width: 100%;
     overflow-x: scroll;
     white-space: nowrap;
@@ -9893,13 +9893,13 @@ background:  url('../images/setup-page-pattern.svg') #edf0f4;
       background-repeat: repeat-x;
       overflow: auto;
       height: 100%;
-      width: 100%;  
+      width: 100%;
 }
 .setup-tit, .lft-setup-tit
     {
       font-size: 24px;
       font-family:"LatoMedium";
-      
+
     }
     .setup-search
     {
@@ -9915,8 +9915,8 @@ background:  url('../images/setup-page-pattern.svg') #edf0f4;
     }
     .setup-search:focus {
         border: 1px solid #fff;
-    } 
-    
+    }
+
     .setupbox
     {
       width: 200px;
@@ -9967,9 +9967,9 @@ background:  url('../images/setup-page-pattern.svg') #edf0f4;
     }
     .setup-lft-menu
     {
-      
+
       padding: 10px;
-      
+
       float: left;
     }
     .setup-right
@@ -9998,9 +9998,588 @@ background:  url('../images/setup-page-pattern.svg') #edf0f4;
     .setup-lft-menu li
     {
       margin-top: 3px;
-      
+
     }
 /* end setup page */
 
 
 /*   prabhu style start */
+
+
+
+
+#notesInfo {
+    width: 100%;
+    float: left;
+    padding-bottom: 0.625rem;
+}
+.chat_bg {
+    max-width: 51.25rem;
+    min-width: 37.5rem;
+    min-height: 3.375rem;
+    float: left;
+    padding: 0.75rem;
+    margin:0.3125rem 0 0.9375rem;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: rgb(239, 242, 244);
+    clear: both;
+}
+.time_icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    font-size:1rem;
+    display: inline-block;
+    margin:0 0.625rem;
+}
+.time_icon:before {
+    content: "\e990";
+    color: #888;
+}
+.comd_timeBG {
+    width: 100%;
+    float: left;
+    margin-top:0.375rem;
+}
+.comd_user {
+    font-size:0.875rem;
+    color: #2F7BD4;
+    float: left;
+}
+.comd_time {
+    font-size:0.875rem;
+    color: #929292;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.2;
+}
+.new-note-bg, .edit_note_bg {
+    /*max-width: 51.25rem;*/
+    /*min-width: 48rem;*/
+    width: 100%;
+    min-height: 3.125rem;
+    float: left;
+    padding: 0.75rem;
+    border-radius:2px;
+    box-sizing: border-box;
+    background: rgb(239, 242, 244);
+    margin:0.625rem 0 0.9375rem;
+    clear: both;
+}
+/*.rediuspad {
+    padding: 0.25rem 0.75rem !important;
+}*/
+.note-content-bg {
+    width:100%;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.chat_divInput,
+.chat_divTextarea {
+    width: 100%;
+    padding: 0.375rem 0.625rem;
+    box-sizing: border-box;
+    background: #fff;
+    font-size:0.875rem;
+    color: #333;
+    display: inline-block;
+    border: 0;
+    float: left;
+    border-radius:3px;
+}
+.chat_divTextarea {
+    min-height:3.125rem;
+    max-height: 8.75rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    resize: vertical;
+    font-size:0.9375rem;
+}
+.chat_div {
+    width: 16.25rem;
+    padding: 0.375rem 0.625rem;
+    box-sizing: border-box;
+    background: #fff;
+    font-size:0.9375rem;
+    color: #333;
+    float: left;
+    margin-bottom:0.5rem;
+}
+.noteeditview {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+/* New style apply for Note page style */
+.eachNote {
+    width: 100%;
+    /*min-width: 37.5rem;*/
+    float: left;
+    padding-bottom:0.625rem;
+    box-sizing: border-box;
+    clear: both;
+    border-bottom: 1px solid #eee;
+}
+.eachNote:last-child {
+    padding-bottom: 0;
+    border-bottom: 0 !important;
+}
+.noteEidt,
+.noteDelelte {
+    margin-left:0.625rem;
+    float: right;
+    font-size:1.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-out;
+    background:transparent;
+}
+.noteEidt:before {
+    content: "\e90f";
+    color: #539de2;
+}
+.noteDelelte:before {
+    content: "\e90e";
+    color:#f76164;
+}
+.eachNote:hover .noteEidt,
+.eachNote:hover .noteDelelte {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease-out;
+}
+.comd_title {
+    width: 80%;
+    color: #111;
+    float: left;
+    font-size:0.9375rem;
+    line-height:1.2;
+    margin-bottom:0.3125rem;
+}
+.comd_name {
+    width: 80%;
+    font-size:0.9375rem;
+    line-height:1.2;
+    font-family: var(--font-regular);
+    color: #333;
+    float: left;
+}
+.NoteAddTitle {
+    width: 7.5rem;
+    height: 1.25rem;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    color: #a2a2a2;
+    float: left;
+    /*margin: 0.625rem 0rem 0 0;*/
+    box-sizing: border-box;
+    line-height: 1.7;
+}
+
+/* File Attachment style */
+
+.noteAttachmentWraper {
+    max-width: 51.25rem;
+    float: left;
+    clear: both;
+}
+.noteAttachimentDiv {
+    /*min-width: 200px;*/
+    max-width: 51.25rem;
+    padding-top:1.125rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+.attachimentWrapDiv {
+    float: left;
+    margin: 0 0.625rem 0.9375rem 0;
+    width: 7.5rem;
+    height: 9.375rem;
+    text-align: center;
+}
+
+.notefileAttachiment {
+    width: 100%;
+    height: 8rem;
+    border: 1px solid #f0f0f0;
+    float: left;
+}
+
+.notAttachimentBG {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.attachimentimgDiv {
+    width: 6.25rem;
+    height: 5.75rem;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.attachimentimg {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 0 auto;
+    background-size: cover;
+    cursor: pointer;
+}
+.attachimenticonDiv {
+    width: 100%;
+    padding: 0.3125rem 0.625rem;
+    background: #d0d0d0;
+    box-sizing: border-box;
+    float: left;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(3px);
+    transition: transform .3s ease-out;
+}
+
+.attachimentName {
+    width: 6.25rem;
+    font-size:0.9375rem;
+    color: #222;
+    margin: 0.625rem auto 0;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+.attachimentboxname {
+    width: 5rem;
+    padding:0.3125rem;
+    box-sizing: border-box;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top:35%;
+    font-size: 0.9375rem;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+.notAttachimentBG:hover .attachimenticonDiv {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(1px);
+    transition: transform .3s ease-out;
+}
+.attachimenticonBG {
+    min-width: 2.5rem;
+    height: 1.25rem;
+    float: left;
+    z-index: 1;
+    position: relative;
+    /*margin: 0.875rem 0.75rem 0 0;*/
+    max-width: 11.25rem;
+}
+.attachimenticon {
+    width: 100%;
+    height: 1.25rem;
+    z-index: 1;
+    opacity: 0;
+}
+.note-attachment-text {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    font-size:0.8125rem;
+    color: #a2a2a2;
+    padding:0;
+    display: flex;
+}
+.note-attachment-textDiv {
+    display:inline-block;
+    font-size: .875rem;
+    line-height: 1.2;
+    color:#a2a2a2;
+}
+.note-attachment-text .icon{
+    width: 1rem;
+    font-size: .875rem;
+    margin-right: .5rem;
+}
+
+.subattachimenticon {
+    width: 100%;
+    height: 1.25rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    font-size: 0.8125rem;
+    color: #a2a2a2;
+    text-indent: 25px;
+    line-height: 1.7;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.attachimentDiv {
+    width: 50rem;
+    height: 31.25rem;
+    margin: 3.125rem auto 0;
+    position: relative;
+}
+.img-div {
+    width: 6.25rem;
+    height: 6.25rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.notesBG {
+    width: 100%;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    background:#fff;
+}
+
+.viewicon {
+    width: 1.375rem;
+    height: 1.25rem;
+    font-size: .937rem;
+    margin: 0 0.9375rem 0 0;
+    display: inline-block;
+    position: relative;
+    background: transparent;
+}
+.viewicon:before {
+    content: "\e999";
+    color: #6d6d6d;
+}
+.downloadicon {
+    width: 1.375rem;
+    height: 1.25rem;
+    font-size: .937rem;
+    position: relative;
+    background: transparent;
+}
+.downloadicon:before {
+    content: "\e928";
+    color: #6d6d6d;
+}
+.downtooltip,
+.viewtooltip {
+    left: 50%;
+    transform: translate(-50%, 28px);
+}
+
+.downloadicon:hover .downtooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 13px);
+    transition: transform .3s ease-out;
+}
+
+.viewicon:hover .viewtooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 13px);
+    transition: transform .3s ease-out;
+}
+/* styles added by uk*/
+.fileNameColor {
+    color: #2c7bd0 !important;
+}
+@-webkit-keyframes rotation {
+    from {
+          transform: rotate(0deg);
+    }
+    to {
+         transform: rotate(359deg);
+    }
+ }
+ .imgLoader{
+    width: 35px;
+    height: 35px;
+    border-radius: 999px;
+    border: 3px solid;
+    border-color: rgba(255,255,255,.3) rgba(255,255,255,.3) #fff rgba(255,255,255,0.3);
+    -webkit-animation: rotation .5s infinite linear;
+    animation: rotation .5s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 54;
+    background: 0 0;
+    transform: translate(-50%,-50%);
+}
+.img-previewBox-wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top:0;
+    transform: translateX(-50%);
+    padding: 5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.imgClose {
+    width:26px;
+    height:26px;
+    position: absolute;
+    right: 30px;
+    top:30px;
+    display: none;
+    cursor: pointer;
+}
+.circle-close{
+    width:26px;
+    height: 26px;
+    fill: #fff;
+}
+.circle-close path{
+    stroke: #a5a5a5;
+    stroke-width: .3;
+}
+.img-preview-div{
+    max-width: 100%;
+    max-height:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.attachment-wrap {
+    width: 100%;
+    float: left;
+    padding-top: 0.625rem;
+    box-sizing: border-box;
+    margin-left:0.375rem;
+}
+.attach-ind {
+    width: 100%;
+    float: left;
+    margin-bottom: 0.75rem;
+}
+
+.attach-desc {
+    width: 80%;
+    float: left;
+}
+.attach-details {
+    min-width: 16.125rem;
+    float: left;
+    padding: 0;
+    vertical-align: top;
+}
+.attach-name {
+    font-size: .875rem;
+    color: #2c7bd0;
+    overflow: visible;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+    float: left;
+}
+.attach-size {
+    font-size: .875rem;
+    color: #555;
+    float: left;
+    margin-right: 0.625rem;
+}
+.attach-loading {
+    display: none;
+    float: left;
+    width: 7.5rem;
+    padding: 0.3125rem;
+    vertical-align: middle;
+    margin-right: 0.625rem;
+}
+.attach-cancel {
+    font-size: .712rem;
+    float: left;
+}
+.attach-cancel:before {
+    content: "\e910";
+    color: #777;
+}
+
+.existing-file .attach-name {
+    color: #000 !important;
+}
+
+.existing-file .attach-cancel {
+    display: none !important;
+}
+.view_note_bg {
+    width: 100%;
+    background: #fff;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+.createPopupCont {
+  width: 90%;
+  /*padding: 20px;*/
+  background: var(--whiteclr);
+  position: relative;
+  height: 100vh;
+  transition: .3s ease-out;
+  overflow: hidden;
+  float: right;
+}
+
+.popup-header-wrap {
+  width: 100%;
+  padding: 1.125rem 1.5625rem;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.content-wrap {
+  width: 100%;
+  height: calc(100vh - 60px);
+  padding: 25px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.menu-act {
+  float: left;
+  padding: .3125rem 1rem .25rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: var(--clr3);
+  cursor: pointer;
+  border: 1px solid #e4e4e4;
+  position: relative;
+}
