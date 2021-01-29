@@ -1,4 +1,23 @@
-<ul><li {{on "click" (fn this.changeView "list")}}>List</li><li {{on "click" (fn this.changeView "canvas")}}>Canvas</li></ul>
+<div class="listview-top">
+        <ul>
+                <li class="fl"><a href="javascript:;" class="list-filter-icon">&nbsp;</a></li>
+                <li class="fl"><div class="custom-view-link">All Appointments</div></li>
+
+                <li class="fr"><a href="javascript:;" class="green-cir-bg fl"><span class="list-more-icon">&nbsp;</span></a></li>
+                <li class="fr"><a href="javascript:;" class="primary-button fr">New Appointment</a></li>
+
+                 <li class="fr">
+
+                 <ul>
+                    <li {{on "click" (fn this.changeView "list")}} class="go-list-view-icon">&nbsp;</li>
+                    <li {{on "click" (fn this.changeView "canvas")}} class="canvas-view-icon">&nbsp;</li>
+                </ul>
+                 
+                 </li>
+
+                
+        </ul>
+    </div>
 
 <div>
 {{#if (eq this.selectedView 'list')}}
