@@ -12,7 +12,7 @@ export default class HeaderTabComponent extends Component {
     	this.subMenuVisible = true;
 		this.submenu = tabHead.submenu;
 		var left = event.target.offsetLeft;
-		document.getElementsByClassName('dialog-popup1')[0].style.display = 'block';
+		document.getElementsByClassName('sub-menu-container')[0].style.display = 'block';
 		document.getElementsByClassName('dialog-popup1')[0].style.left = left + "px";
 	}
 

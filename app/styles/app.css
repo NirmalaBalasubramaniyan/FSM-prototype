@@ -23,7 +23,7 @@
   width: 150px;
   background: white;
   z-index: 3;
-  display: none;
+  /*display: none;*/
   box-shadow: 0 0 20px rgba(0, 0, 0, .65), 0 0 1px 1px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 5px;
@@ -7688,8 +7688,7 @@ input[type="radio"]:checked+.radio-style:before {
   z-index: 27;
 }
 
-.freezeDiv,
-.dialog-popup1 {
+.freezeDiv {
   display: none;
 }
 

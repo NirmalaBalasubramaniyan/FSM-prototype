@@ -7,8 +7,10 @@
       <input type="text" class="tab-search" {{on 'focusout' (fn this.showSubMenu)}} {{on 'focus' (fn this.hideSubMenu)}} />
     </li>
   </ul>
-  <div class="dialog-popup1">
+  <div class="dialog-popup1" style="display: 'block'">
+    <div class="sub-menu-container" style="display: {{if subMenuVisible 'block' 'none'}}">
     <HeaderSubMenu @submenus={{this.submenu}} />
+    </div>
   </div>
   <div>
     <ul>
