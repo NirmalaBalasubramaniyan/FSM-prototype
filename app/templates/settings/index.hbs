@@ -1,10 +1,26 @@
-<div class="stg-group-list">
+
+<div class="setlinkarea">
+<div style="width: 1300px;margin: 0 auto;">
+<div class="mt20 p16">
+		<ul>
+			<li class="fl">
+				<p class="setup-tit">Setup</p>
+			</li>
+			<li class="fl"> 
+				<input type="text" placeholder="Search" class="ml20 setup-search">
+			</li>
+			<li class="fr">
+				<a href="javascript:;" class="sec-btn">Customize Setup</a>
+			</li>
+		</ul>
+	</div>
 	{{#each @model.settings as |stgGrp|}}
-		<ul class="stg-group">
+		<ul class="setupbox">
 			<b><li class="stg-title">{{stgGrp.title}}</li></b>
 			{{#each stgGrp.submenus as |stgItem|}}
 				<li class="stg-item"><LinkTo @route="setting" @model={{stgItem.url}}>{{stgItem.title}}</LinkTo></li>
 			{{/each}}
 		</ul>
 	{{/each}}
+	</div>
 </div>

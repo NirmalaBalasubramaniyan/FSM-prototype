@@ -1,22 +1,13 @@
 <div class="listview-header mt13">
 
-{{#each @columnKeys as |key|}}
-               
-                <a href="javascript:;">
-                     {{key}}
-                </a>
-            {{/each}}
+{{#each @columnKeys as |key|}}<a href="javascript:;">{{key}}</a>{{/each}}
             </div>
   {{#each @list as |record|}}
 
     <div class="listview-value">
         
 
-            {{#each @columnKeys as |key|}}
-                <LinkTo @route="tab.detail" class="item-column" @model={{record.Name}}>
-                     {{get record key}}
-               </LinkTo>
-            {{/each}}
+            {{#each @columnKeys as |key|}}<LinkTo @route="tab.detail" class="item-column" @model={{record.Name}}>{{get record key}}</LinkTo>{{/each}}
         
     </div>
   {{/each}}
