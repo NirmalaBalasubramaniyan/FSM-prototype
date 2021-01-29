@@ -17,7 +17,7 @@ Router.map(function () {
   this.route('settings', {path:"settings/"}, function() {
     this.route('index', { path: '/' });
     // this.route('setting', { path: '/:settings_path' });
-  })  
-    this.route('create');
-  this.route('edit');
+  })
+  this.route('create');
+    this.route('edit');
 });
