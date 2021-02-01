@@ -1,1 +1,45 @@
-<p>Notes div</p>
+<div class="notes-wrap">
+  <div class="horizantalLoader" id="loading" style="display: none;">
+    <div class="line"></div>
+    <div class="subline inc"></div>
+    <div class="subline dec"></div>
+  </div>
+  <div class="notes-container">
+    <div class="new-note-bg notes-cr"><input type="text" id="note-display" placeholder="Add a note..." class="chat_divInput fL">
+      <div id="note-expand" style="display: none;"><input type="text" id="note-title" placeholder="Title" class="chat_div f-Semibold" style="display: none;">
+        <div class="note-content-bg" style="display: none;"><textarea type="text" id="note-content" placeholder="Add a note" class="chat_divTextarea fL"></textarea>
+          <div class="w100per Xspace-between mT15">
+            <div class="Xleft"><a href="javascript:;" class="attachimenticonBG"><input id="note-attachment" multiple="multiple" type="file" class="attachimenticon"><span class="note-attachment-text">
+                  <div class="icon icon-attachment"></div>
+                  <p class="note-attachment-textDiv">Attach File</p>
+                </span></a>
+              <div id="note-title-link" class="NoteAddTitle">Add Title</div>
+            </div>
+            <div class="Xright"><button class="secondaryBtn rediuspad mR10">Cancel</button><button class="primaryBtn rediuspad">Save</button></div>
+          </div>
+          <div class="attachment-wrap"></div>
+        </div>
+      </div>
+    </div>
+    <div class="notes-list">
+      <div class="eachNote" id="notes_4475421000000224012">
+        <div class="view_note_bg"><button class="noteDelelte icon"></button><button class="noteEidt icon"></button>
+          <div class="comd_title f-Semibold">title</div>
+          <div class="comd_name">Content</div>
+          <div class="noteAttachmentWraper" notesid="4475421000000224012"></div>
+          <div class="comd_timeBG">
+            <div class="comd_user">Krish US47</div><span class="time_icon icon"></span>
+            <p class="comd_time">29 Jan 2021 12:42 PM</p>
+          </div>
+        </div>
+        <div class="edit_note_bg" style="display: none;"><input type="text" id="note-title" placeholder="Title" class="chat_div f-Semibold" value="title" style="display: none;"><textarea type="text" id="note-content" placeholder="Add a note" class="chat_divTextarea fL"></textarea><a href="javascript:;" class="attachimenticonBG"><input type="file" class="attachimenticon" id="note-attachment" multiple="multiple"><span class="note-attachment-text">
+              <div class="icon icon-attachment"></div>
+              <p class="note-attachment-textDiv">Attach File</p>
+            </span></a>
+          <div id="add-title-label" class="NoteAddTitle">Add Title</div><button class="primaryBtn rediuspad edtBtns fR mT10">Save</button><button class="secondaryBtn rediuspad edtBtns fR mT10 mR10">Cancel</button>
+          <div class="attachment-wrap"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
