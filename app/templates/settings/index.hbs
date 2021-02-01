@@ -15,12 +15,15 @@
 		</ul>
 	</div>
 	{{#each @model.settings as |stgGrp|}}
-		<ul class="setupbox">
-			<b><li class="stg-title">{{stgGrp.title}}</li></b>
+		<div class="setupbox">
+			<h3 class="stg-title">{{stgGrp.title}}</h3>
+			<ul>
 			{{#each stgGrp.submenus as |stgItem|}}
 				<li class="stg-item"><LinkTo @route="setting" @model={{stgItem.url}}>{{stgItem.title}}</LinkTo></li>
 			{{/each}}
 		</ul>
+</div>
 	{{/each}}
+	
 	</div>
 </div>

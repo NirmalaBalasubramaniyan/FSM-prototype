@@ -5181,7 +5181,7 @@ tr .lookup-cont .lookupclose {
   padding: 0;
   box-sizing: border-box;
 }
-
+/*
 html {
   width: 100%;
   height: 100%;
@@ -5203,7 +5203,7 @@ body {
   overflow: hidden;
   position: relative;
   line-height: 1;
-}
+}*/
 
 :root {
   --whiteclr: #fff;
@@ -9469,20 +9469,7 @@ li.tab-menu:hover
             width: 100%;
 
         }
-        .setupbox
-        {
-            width: 200px;
-            padding:20px;
-            border-radius: 12px;
-            border: solid 1px #d9e0eb;
-            overflow: auto;
-            background: #fff;
-            min-height: 220px;
-            float: left;
-            margin-left: 15px;
-            margin-top: 15px;
-
-        }
+      
         .setupbox h3
         {
             color: #313949;
@@ -9919,7 +9906,7 @@ background:  url('../images/setup-page-pattern.svg') #edf0f4;
 
     .setupbox
     {
-      width: 200px;
+      width: 230px;
       padding:20px;
       border-radius: 12px;
       border: solid 1px #d9e0eb;
