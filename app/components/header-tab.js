@@ -6,9 +6,9 @@ export default class HeaderTabComponent extends Component {
 
 	@tracked submenu = [];
 	@tracked subMenuVisible = false;
+	@tracked childActive = true;
   	@action
   	showSubMenu(tabHead, event) {
-    	// alert(`The tab name is `+ tabHead.submenu.length);
     	this.subMenuVisible = true;
 		this.submenu = tabHead.submenu;
 		var left = event.target.offsetLeft;
@@ -18,6 +18,17 @@ export default class HeaderTabComponent extends Component {
 
 	@action
 	hideSubMenu() {
-		this.subMenuVisible = false;
+		console.log(event);		
+		setTimeout(function() {
+			if(this.childActive != true)
+	    		this.subMenuVisible = false;
+	  	}, 100);
+	}
+
+	@action
+	toggleSubMenu(isChildActive) {
+		if(isChildActive)
+			this.childActive = true;
+		this.subMenuVisible = isChildActive;
 	}
 }

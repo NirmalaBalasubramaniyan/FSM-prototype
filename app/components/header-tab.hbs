@@ -1,15 +1,15 @@
 <div class="tab-grp">
   <ul class="tab-list-container">
     {{#each @tabs as |tabHead|}}
-    <li class="tab-menu"><button type="button" {{on 'mouseover' (fn this.showSubMenu tabHead)}} {{on 'click' (fn this.hideSubMenu)}} class="tab-menu-button">{{tabHead.title}}</button></li>
+    <li class="tab-menu"><button type="button" {{on 'mouseover' (fn this.showSubMenu tabHead)}} {{on 'mouseout' (fn this.hideSubMenu)}} class="tab-menu-button">{{tabHead.title}}</button></li>
     {{/each}}
     <li class="tab-menu">
       <input type="text" class="tab-search" {{on 'focusout' (fn this.showSubMenu)}} {{on 'focus' (fn this.hideSubMenu)}} />
     </li>
   </ul>
-  <div class="dialog-popup1" style="display: 'block'">
-    <div class="sub-menu-container" style="display: {{if subMenuVisible 'block' 'none'}}">
-    <HeaderSubMenu @submenus={{this.submenu}} />
+  <div class="dialog-popup1">
+    <div class="sub-menu-container" style="display: {{if this.subMenuVisible 'block' 'none'}}" >
+      <HeaderSubMenu @submenus={{this.submenu}} @subMenuVisible={{this.subMenuVisible}} @cbForActiveHover={{this.toggleSubMenu}}/>
     </div>
   </div>
   <div>

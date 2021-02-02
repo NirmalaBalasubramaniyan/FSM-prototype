@@ -1,4 +1,4 @@
-<ul class="sub-menu-list-container">
+<ul class="sub-menu-list-container" {{on 'mouseover' (fn this.showSubMenu @cbForActiveHover)}} {{on 'mouseout' (fn this.hideSubMenu @cbForActiveHover)}}>
   {{#each @submenus as |subMenu|}}
     <li class="sub-menu-item"><LinkTo @route="tab" @model={{subMenu.url}}><button type="button" class="sub-menu-button">{{subMenu.title}}</button></LinkTo></li>
   {{/each}}

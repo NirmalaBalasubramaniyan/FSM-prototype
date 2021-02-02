@@ -7642,8 +7642,7 @@ input[type="radio"]:checked+.radio-style:before {
   z-index: 27;
 }
 
-.freezeDiv,
-.dialog-popup1 {
+.freezeDiv {
   display: none;
 }
 
