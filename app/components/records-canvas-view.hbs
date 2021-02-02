@@ -1,4 +1,4 @@
-<ul class="records-list-container">
+<!-- <ul class="records-list-container">
 {{#each @columnKeys as |key|}}
                 <div class="item-column">
                      {{key}}
@@ -6,32 +6,48 @@
             {{/each}}
   {{#each @records as |record|}}
     <li class="record-list-item">
-    	<LinkTo @route="tab">
-    		{{#each @columnKeys as |key|}}
+        <LinkTo @route="tab">
+            {{#each @columnKeys as |key|}}
                 <div class="item-column">
-    			     {{get record key}}
+                     {{get record key}}
                 </div>
-    		{{/each}}
-    	</LinkTo>
+            {{/each}}
+        </LinkTo>
     </li>
   {{/each}}
 </ul>
-
+ -->
 <table width="100%" cellpadding="0" cellspacing="0" class="canvas-view-tbl">
-    <tr>
-        <td>
-            <div class="ml20 can-row-1"><a href="" class="fl">REQ-234</a><p class="fl ml20">This this title of service</p></div>
-
-            <ul class="can-viw-list"><li><span class="can-lbl">name :</span>  <span class="can-val">prabhu</span></li><li><span class="can-lbl">name :</span>  <span class="can-val">prabhu</span></li></ul>
-        </td>
-        <td>
-            &nbsp;
-        </td>
-        <td>
-            <p>New </p>
-            <p>High Priority</p>
-        </td>
-    </tr>
+  {{#each @records as |record|}}
+  <!--     <li class="record-list-item">
+        <LinkTo @route="tab">
+            {{#each @columnKeys as |key|}}
+                <div class="item-column">
+                     {{get record key}}
+                </div>
+            {{/each}}
+        </LinkTo>
+    </li> -->
+  <tr>
+    <td>
+      <div class="ml20 can-row-1"><a href="" class="fl">{{get record "Name"}}</a>
+        <p class="fl ml20">{{get record "mail"}}</p>
+      </div>
+      <ul class="can-viw-list">
+        {{#each @columnKeys as |key|}}
+        <li><span class="can-lbl">{{key}} :</span> <span class="can-val">{{get record key}}</span></li>
+        {{/each}}
+        
+        
+      </ul>
+    </td>
+<!--     <td>
+      &nbsp;
+    </td>
+    <td>
+      <p>New </p>
+      <p>High Priority</p>
+    </td> -->
+  </tr>
+  {{/each}}
 </table>
-
-
