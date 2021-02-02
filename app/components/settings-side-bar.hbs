@@ -13,14 +13,18 @@
 </div>
 	<div class="setup-lft-menu">
 	{{#each @value as |stgGrp|}}
-		<ul class="stg-group">
-			<b><li class="stg-title" {{on "click" this.toggleSubSettings}}>{{stgGrp.title}}</li></b>
-			<div class="side-stg-submenus" style="display: none">
+		<div class="stg-group"> 
+			<a class="stg-title" {{on "click" this.toggleSubSettings}}><h3>{{stgGrp.title}}</h3></a>
+			
+			<div class="side-stg-submenus listdiv" style="display: none">
+			<ul>
 			{{#each stgGrp.submenus as |stgItem|}}
 				<li class="stg-item"><LinkTo @route="setting" @model={{stgItem.url}}>{{stgItem.title}}</LinkTo></li>
 			{{/each}}
+			</ul>
 			</div>
-		</ul>
+			</div>
+		
 	{{/each}}
 </div>
 </div>
