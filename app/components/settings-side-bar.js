@@ -13,4 +13,10 @@ export default class SettingsSideBarComponent extends Component{
       else
       	closestMenu.style.display='none';
     }
+
+    @action
+    adjustHeight(element) {
+      var windowHgt = window.outerHeight;
+      element.style.height = windowHgt + "px";
+    }  
 };
