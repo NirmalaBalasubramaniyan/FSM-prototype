@@ -1,30 +1,35 @@
 <div class="setup-left" {{did-insert this.adjustHeight}}>
-	
-	<div>
-	<ul>
-			<li class="fl">
-				<a href="index.html" style="text-decoration: none;color: #222;"><p class="lft-setup-tit setup-tit">Setup</p></a>
-			</li>
-			<li class="fl"> 
-				<input type="text" placeholder="Search" class="lft-setup-search mt20">
-			</li>
-			
-		</ul>
+  <div>
+    <ul>
+      <li class="fl">
+        <a href="index.html" style="text-decoration: none;color: #222;">
+          <p class="lft-setup-tit setup-tit">Setup</p>
+        </a>
+      </li>
+      <li class="fl">
+        <input type="text" placeholder="Search" class="lft-setup-search mt20">
+      </li>
+    </ul>
+  </div>
+  <div class="setup-lft-menu">
+    {{#each @value as |stgGrp|}}
+    <div class="stg-group">
+      <a class="stg-title" {{on "click" this.toggleSubSettings}}>
+        <h3>{{stgGrp.title}}</h3>
+      </a>
+      <div class="side-stg-submenus listdiv" style="display: none">
+        <ul>
+          {{#each stgGrp.submenus as |stgItem|}}
+          <li class="stg-item">
+            <LinkTo @route="setting" @model={{stgItem.url}}>{{stgItem.title}}</LinkTo>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    {{/each}}
+  </div>
 </div>
-	<div class="setup-lft-menu">
-	{{#each @value as |stgGrp|}}
-		<div class="stg-group"> 
-			<a class="stg-title" {{on "click" this.toggleSubSettings}}><h3>{{stgGrp.title}}</h3></a>
-			
-			<div class="side-stg-submenus listdiv" style="display: none">
-			<ul>
-			{{#each stgGrp.submenus as |stgItem|}}
-				<li class="stg-item"><LinkTo @route="setting" @model={{stgItem.url}}>{{stgItem.title}}</LinkTo></li>
-			{{/each}}
-			</ul>
-			</div>
-			</div>
-		
-	{{/each}}
-</div>
+<div style="height: 1053px;float: left;width: calc(100% - 260px);" {{did-insert this.adjustHeight}}>
+  {{yield}}
 </div>

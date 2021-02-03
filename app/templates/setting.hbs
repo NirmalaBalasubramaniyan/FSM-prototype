@@ -1,3 +1,5 @@
-{{page-title "Setting"}}
-	<SettingsSideBar @value={{@model.settings}}></SettingsSideBar>
-{{outlet}}
+<!-- {{page-title "Setting"}} -->
+<SettingsSideBar @value={{@model.settings}}>
+  <SettingsSubtab @value={{@model}}></SettingsSubtab>
+</SettingsSideBar>
+<!-- {{outlet}} -->

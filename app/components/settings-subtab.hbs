@@ -1,0 +1,13 @@
+<div style="padding: 20px; font-size: 24px; border-bottom: 1px solid #d2d2d2;">{{@value.path}}</div>
+{{#if @value.current_tab_detail}}
+{{#if @value.current_tab_detail.subtabs}}
+<div class="w100per fL">
+  {{#each @value.current_tab_detail.subtabs as |tabs|}}
+  <div class="menu-act" {{on 'click' (fn this.showCurrentTab tabs.title)}}>{{tabs.title}}</div>
+  {{/each}}
+</div>
+{{/if}}
+{{/if}}
+<div class="w100per fL mT15 p20">
+  {{this.currentTab}}
+</div>
