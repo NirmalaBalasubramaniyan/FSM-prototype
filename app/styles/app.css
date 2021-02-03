@@ -1079,3 +1079,99 @@
 
   /*   end prabhu style start */
 
+
+
+
+
+
+/*Krishanth style for layout in detail page*/
+
+
+
+
+
+
+
+
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 29% 40% 29.5%;
+  grid-template-rows: 3.125rem 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  height: 100%;
+  width: 100%;
+}
+
+.topPanC {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.topPanR {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.leftPanC {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid #dfdfdf;
+  background: white;
+  padding: 10px;
+}
+
+.middlePanC {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid #dfdfdf;
+  background: white;
+  padding: 10px;
+}
+
+.rightPanC {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid #dfdfdf;
+  background: white;
+  padding: 10px;
+}
+
+
+.row-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  height: 100%;
+}
+.row-item {
+    border: 1px solid #dfdfdf;
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-act {
+  float: left;
+    padding: .3125rem 1rem .25rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: var(--clr3);
+    cursor: pointer;
+    border: 1px solid #e4e4e4;
+    position: relative;
+}
+
+
+/*end of krishanth style*/
