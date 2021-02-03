@@ -1,0 +1,106 @@
+
+
+
+
+.field-section
+{
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px 0;
+}
+input
+{
+  border:transparent;
+}
+.form-label
+{
+  width:30%;
+  text-align: right;
+  margin-right: 20px;
+}
+.form-field
+{
+  width: 70%;
+  border: 1px solid #cfd9e3;
+  border-radius:6px;
+  position: relative;
+}
+.form-field:hover
+{
+  border: 1px solid #30c384;
+}
+.form-field input[type=text]
+{
+  width: 100%;
+  height:39px;
+  box-sizing: border-box;
+  border-radius:6px;
+  /*height: 85%;*/
+  padding-left:10px;
+}
+.ui-form
+{
+  margin-top:100px;
+}
+.input-mandatory::before
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  background-color: #ff6a6a;
+  width: 2px;
+  height: 100%;
+  border-top-left-radius:6px;
+  border-bottom-left-radius:6px;
+  z-index: 1;
+  top: 0;
+}
+.input-mandatory
+{
+  border-left: 0 !important;
+}
+.form-page
+{
+margin-top: 10px;
+}
+.form-hdr
+{
+  
+border-top: solid 1px #20ad71;
+background: #fbfcfd;
+overflow: auto;
+padding: 15px 0;
+padding-left: 20px;
+border-bottom: 1px solid #eff1f3;
+width: 100%;
+box-sizing: border-box;
+top:59px;
+position: absolute;
+z-index: 2;
+
+}
+.form-hdr p
+{
+  font-family:"LatoSemibold";
+ font-size: 22px;
+}
+.form-botm-btn-sec
+{
+    background: #fbfcfd;
+border-top: 1px solid #f0f5f8;
+overflow: auto;
+padding: 20px;
+box-sizing: border-box;
+bottom: 0;
+position: absolute;
+width: 100%;
+box-sizing: border-box;
+}
+.form-sec-hdr
+{
+  font-size: 20px;
+  padding-left: 20px;
+  margin:20px 0;
+  margin-top: 50px;
+  font-family:"LatoSemibold";
+}
