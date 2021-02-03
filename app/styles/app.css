@@ -333,7 +333,7 @@
     position: absolute;
       width:210px;
       background: white;
-      z-index: 3;
+      z-index: 13;
       /*display: none;*/
       /*box-shadow: 0 0 20px rgba(0,0,0,.65), 0 0 1px 1px rgba(0,0,0,0.1);*/
       /*border-radius: 5px;*/
