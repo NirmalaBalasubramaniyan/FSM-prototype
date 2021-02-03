@@ -1,333 +1,52 @@
-<div id="sa-detail" style="display: block;">
-  <div class="createPopupCont">
-    <div class="popHdrDiv">
-      <div class="popHdrtext f-light">Create</div><button class="" onclick="history.back();">X</button>
-    </div>
+<div id="sa-detail" style="display: block;width: 100%;height: 100%;box-sizing: border-box;position: fixed;z-index: 10;background: rgba(64,69,72,.6);top: 0;">
+  <div class="createPopupCont" style="
+    width: 56.25rem;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    transition: .3s ease-out;
+    overflow: hidden;
+    float: right;
+    background: white;
+    margin-top: 58px;">
     <div class="content-wrap">
-      <div class="rft-custom-ele" data-instance="1"></div>
-      <div class="Hdrbtm" id="from-header"><span class="sectionHdr f-Semibold">Work Order Summary</span></div>
-      <ul class="col-layout" data-instance="1">
-        <li class="col-cont">
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Summary</span></div>
-            <div class="field-value mandatory formlistbox" data-instance="1" data-apiname="Work_Orders___Summary" data-apinameorg="Summary" data-datatype="textarea"><textarea rows="2" cols="25" class="formboxText rf-valFld" data-fldapiname="Summary" name="textarea" id="Work_Orders___Summary" tabindex="1"></textarea></div>
-            <p class="infoLabel" id="Work_Orders___Summary_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Status</span></div>
-            <div class="field-value mandatory selectfldvalue" data-instance="1" data-apiname="Work_Orders___Status" data-apinameorg="Status" data-datatype="picklist" data-dataval="New">
-              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Status" data-fldapiname="Status" value="New" style="display: none;">
-                  <option id="New" value="New">New</option>
-                  <option id="In Progress" value="In Progress">In Progress</option>
-                  <option id="Cannot Complete" value="Cannot Complete">Cannot Complete</option>
-                  <option id="Completed" value="Completed">Completed</option>
-                  <option id="Closed" value="Closed">Closed</option>
-                  <option id="Cancelled" value="Cancelled">Cancelled</option>
-                  <option id="Scheduled Appointment" value="Scheduled Appointment">Scheduled Appointment</option>
-                  <option id="Dispatched" value="Dispatched">Dispatched</option>
-                </select>
-                <div class="widget-select-styled select-selected-text-active">New</div><input type="hidden" value="New" id="widget_select_option_val">
+      <div class="form-page">
+        <div class="form-hdr">
+          <p>Create Company</p>
+        </div>
+        <div class="ui-form">
+          <div style="width:500px;">
+            <div class="field-section">
+              <div class="form-label">
+                <p>First Name</p>
+              </div>
+              <div class="form-field">
+                <input type="text" class="field-text">
               </div>
             </div>
-            <p class="infoLabel" id="Work_Orders___Status_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Priority</span></div>
-            <div class="field-value selectfldvalue" data-instance="1" data-apiname="Work_Orders___Priority" data-apinameorg="Priority" data-datatype="picklist">
-              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Priority" data-fldapiname="Priority" style="display: none;">
-                  <option id="-None-" value="-None-">-None-</option>
-                  <option id="Low" value="Low">Low</option>
-                  <option id="Medium" value="Medium">Medium</option>
-                  <option id="Critical" value="Critical">Critical</option>
-                  <option id="High" value="High">High</option>
-                </select>
-                <div class="widget-select-styled select-selected-text-active" tabindex="2">-None-</div><input type="hidden" value="-None-" id="widget_select_option_val">
+            <div class="field-section">
+              <div class="form-label">
+                <p>First Name</p>
+              </div>
+              <div class="form-field input-mandatory">
+                <input type="text" class="field-text">
               </div>
             </div>
-            <p class="infoLabel" id="Work_Orders___Priority_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Type</span></div>
-            <div class="field-value mandatory selectfldvalue" data-instance="1" data-apiname="Work_Orders___Type" data-apinameorg="Type" data-datatype="picklist" data-dataval="Service">
-              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Type" data-fldapiname="Type" value="Service" style="display: none;">
-                  <option id="Service" value="Service">Service</option>
-                  <option id="Inspection" value="Inspection">Inspection</option>
-                </select>
-                <div class="widget-select-styled select-selected-text-active" tabindex="3">Service</div><input type="hidden" value="Service" id="widget_select_option_val">
+            <div class="form-sec-hdr">
+              Address Information
+            </div>
+            <div class="field-section">
+              <div class="form-label">
+                <p>First Name</p>
+              </div>
+              <div class="form-field input-mandatory">
+                <input type="text" class="field-text">
               </div>
             </div>
-            <p class="infoLabel" id="Work_Orders___Type_label1"></p>
-            <p class="errorText"></p>
           </div>
-        </li>
-        <li class="col-cont">
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Requests</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Request" data-apinameorg="Request" data-datatype="lookup" data-lookupmod="Requests">
-              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Request" name="lookup" id="Work_Orders___Request" autocomplete="off" readonly="readonly">
-                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon icon-interation"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
-              </div>
-            </div>
-            <p class="infoLabel" id="Work_Orders___Request_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Parent Work Order</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Parent_Work_Order" data-apinameorg="Parent_Work_Order" data-datatype="lookup" data-lookupmod="Work_Orders">
-              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Parent_Work_Order" name="lookup" id="Work_Orders___Parent_Work_Order" autocomplete="off" readonly="readonly">
-                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon icon-interation"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
-              </div>
-            </div>
-            <p class="infoLabel" id="Work_Orders___Parent_Work_Order_label1"></p>
-            <p class="errorText"></p>
-          </div>
-        </li>
-      </ul>
-      <div class="Hdrbtm" id="from-header"><span class="sectionHdr f-Semibold">Contact Details</span></div>
-      <ul class="col-layout" data-instance="1">
-        <li class="col-cont">
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Contact</span></div>
-            <div class="field-value mandatory" data-instance="1" data-apiname="Work_Orders___Customer" data-apinameorg="Customer" data-datatype="lookup" data-lookupmod="Contacts">
-              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Customer" name="lookup" id="Work_Orders___Customer" autocomplete="off" readonly="readonly" tabindex="4">
-                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon zp-li-customer-icon"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
-              </div>
-            </div>
-            <p class="infoLabel" id="Work_Orders___Customer_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Company</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Company" data-apinameorg="Company" data-datatype="lookup" data-lookupmod="Accounts">
-              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Company" name="lookup" id="Work_Orders___Company" autocomplete="off" readonly="readonly" tabindex="6">
-                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon zp-li-accounts-icon"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
-              </div>
-            </div>
-            <p class="infoLabel" id="Work_Orders___Company_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Territory</span></div>
-            <div class="field-value mandatory" data-instance="1" data-apiname="Work_Orders___Territory" data-apinameorg="Territory" data-datatype="lookup" data-lookupmod="Territories">
-              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Territory" name="lookup" id="Work_Orders___Territory" autocomplete="off" readonly="readonly">
-                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon zp-li-territory-icon"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
-              </div>
-            </div>
-            <p class="infoLabel" id="Work_Orders___Territory_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Email</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Email" data-apinameorg="Email" data-datatype="email"><input type="text" class="valueText rf-valFld" data-fldapiname="Email" name="email" id="Work_Orders___Email" autocomplete="off" tabindex="8"></div>
-            <p class="infoLabel" id="Work_Orders___Email_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Service Street 1</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Service_Street" data-apinameorg="Service_Street" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_Street" name="text" id="Work_Orders___Service_Street" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Service_Street_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Service Street 2</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Service_Street2" data-apinameorg="Service_Street2" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_Street2" name="text" id="Work_Orders___Service_Street2" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Service_Street2_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">State</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Service_State" data-apinameorg="Service_State" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_State" name="text" id="Work_Orders___Service_State" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Service_State_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Zip Code</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Service_Zip_Code" data-apinameorg="Service_Zip_Code" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_Zip_Code" name="text" id="Work_Orders___Service_Zip_Code" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Service_Zip_Code_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">City</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Service_City" data-apinameorg="Service_City" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_City" name="text" id="Work_Orders___Service_City" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Service_City_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Service Longitude</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Service_Longitude" data-apinameorg="Service_Longitude" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_Longitude" name="text" id="Work_Orders___Service_Longitude" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Service_Longitude_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Country</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Service_Country" data-apinameorg="Service_Country" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_Country" name="text" id="Work_Orders___Service_Country" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Service_Country_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Service Latitude</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Service_Latitude" data-apinameorg="Service_Latitude" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_Latitude" name="text" id="Work_Orders___Service_Latitude" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Service_Latitude_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Service Address Name</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Service_Address_Name" data-apinameorg="Service_Address_Name" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_Address_Name" name="text" id="Work_Orders___Service_Address_Name" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Service_Address_Name_label1"></p>
-            <p class="errorText"></p>
-          </div>
-        </li>
-        <li class="col-cont">
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Service Address</span></div>
-            <div class="field-value mandatory" data-instance="1" data-apiname="Work_Orders___Service_Address" data-apinameorg="Service_Address" data-datatype="address" data-lookupmod="Addresses">
-              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Service_Address" name="lookup" id="Work_Orders___Service_Address" autocomplete="off" readonly="readonly" tabindex="5">
-                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon zp-li-service-address-icon"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
-              </div>
-            </div>
-            <p class="infoLabel" id="Work_Orders___Service_Address_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Billing Address</span></div>
-            <div class="field-value mandatory" data-instance="1" data-apiname="Work_Orders___Billing_Address" data-apinameorg="Billing_Address" data-datatype="address" data-lookupmod="Addresses">
-              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_Address" name="lookup" id="Work_Orders___Billing_Address" autocomplete="off" readonly="readonly" tabindex="7">
-                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon zp-li-billing-address-icon"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
-              </div>
-            </div>
-            <p class="infoLabel" id="Work_Orders___Billing_Address_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Phone</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Phone" data-apinameorg="Phone" data-datatype="phone"><input type="phone" class="valueText rf-valFld" data-fldapiname="Phone" name="phone" id="Work_Orders___Phone" autocomplete="off" tabindex="9"></div>
-            <p class="infoLabel" id="Work_Orders___Phone_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Billing City</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Billing_City" data-apinameorg="Billing_City" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_City" name="text" id="Work_Orders___Billing_City" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Billing_City_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Billing Country</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Billing_Country" data-apinameorg="Billing_Country" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_Country" name="text" id="Work_Orders___Billing_Country" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Billing_Country_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Billing Street 1</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Billing_Street" data-apinameorg="Billing_Street" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_Street" name="text" id="Work_Orders___Billing_Street" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Billing_Street_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Billing Street 2</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Billing_Street2" data-apinameorg="Billing_Street2" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_Street2" name="text" id="Work_Orders___Billing_Street2" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Billing_Street2_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Billing Latitude</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Billing_Latitude" data-apinameorg="Billing_Latitude" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_Latitude" name="text" id="Work_Orders___Billing_Latitude" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Billing_Latitude_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Billing State</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Billing_State" data-apinameorg="Billing_State" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_State" name="text" id="Work_Orders___Billing_State" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Billing_State_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Billing Zip Code</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Billing_Zip_Code" data-apinameorg="Billing_Zip_Code" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_Zip_Code" name="text" id="Work_Orders___Billing_Zip_Code" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Billing_Zip_Code_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Billing Longitude</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Billing_Longitude" data-apinameorg="Billing_Longitude" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_Longitude" name="text" id="Work_Orders___Billing_Longitude" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Billing_Longitude_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Billing Address Name</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Billing_Address_Name" data-apinameorg="Billing_Address_Name" data-datatype="text"><input type="text" class="valueText rf-valFld" data-fldapiname="Billing_Address_Name" name="text" id="Work_Orders___Billing_Address_Name" autocomplete="off"></div>
-            <p class="infoLabel" id="Work_Orders___Billing_Address_Name_label1"></p>
-            <p class="errorText"></p>
-          </div>
-        </li>
-      </ul>
-      <div class="Hdrbtm" id="from-header"><span class="sectionHdr f-Semibold">Preferred Time</span></div>
-      <ul class="col-layout" data-instance="1">
-        <li class="col-cont">
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Preferred Slot</span></div>
-            <div class="field-value selectfldvalue" data-instance="1" data-apiname="Work_Orders___Preferred_Slot" data-apinameorg="Preferred_Slot" data-datatype="picklist">
-              <div class="widget_select_div" style="border: none; width: 100%; padding-right: 0px;"><select class="dataValue rf-valFld select-hidden" id="Work_Orders___Preferred_Slot" data-fldapiname="Preferred_Slot" style="display: none;">
-                  <option id="-None-" value="-None-">-None-</option>
-                  <option id="Preferred Time" value="Preferred Time">Preferred Time</option>
-                  <option id="Weekdays" value="Weekdays">Weekdays</option>
-                </select>
-                <div class="widget-select-styled select-selected-text-active" tabindex="10">-None-</div><input type="hidden" value="-None-" id="widget_select_option_val">
-              </div>
-            </div>
-            <p class="infoLabel" id="Work_Orders___Preferred_Slot_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Preferred Start Time</span></div>
-            <div class="field-value mandatory" data-instance="1" data-apiname="Work_Orders___Preferred_Start_Time" data-apinameorg="Preferred_Start_Time" data-datatype="datetime"><input type="text" class="valueText rf-valFld" data-fldapiname="Preferred_Start_Time" name="datetime" id="Work_Orders___Preferred_Start_Time" autocomplete="off" placeholder="MMM D, Y hh:mm A"></div>
-            <p class="infoLabel" id="Work_Orders___Preferred_Start_Time_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont" style="display: none;">
-            <div class="field-label"><span class="fld-text">Preferred End Time</span></div>
-            <div class="field-value mandatory" data-instance="1" data-apiname="Work_Orders___Preferred_End_Time" data-apinameorg="Preferred_End_Time" data-datatype="datetime"><input type="text" class="valueText rf-valFld" data-fldapiname="Preferred_End_Time" name="datetime" id="Work_Orders___Preferred_End_Time" autocomplete="off" placeholder="MMM D, Y hh:mm A"></div>
-            <p class="infoLabel" id="Work_Orders___Preferred_End_Time_label1"></p>
-            <p class="errorText"></p>
-          </div>
-        </li>
-        <li class="col-cont">
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Preference</span></div>
-            <div class="field-value formlistbox" data-instance="1" data-apiname="Work_Orders___Preference" data-apinameorg="Preference" data-datatype="textarea"><textarea rows="2" cols="25" class="formboxText rf-valFld" data-fldapiname="Preference" name="textarea" id="Work_Orders___Preference" tabindex="11"></textarea></div>
-            <p class="infoLabel" id="Work_Orders___Preference_label1"></p>
-            <p class="errorText"></p>
-          </div>
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Due Date</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Due_Date" data-apinameorg="Due_Date" data-datatype="date"><input type="text" class="valueText rf-valFld" data-fldapiname="Due_Date" name="datetime" id="Work_Orders___Due_Date" autocomplete="off" placeholder="MMM D, Y" tabindex="12"></div>
-            <p class="infoLabel" id="Work_Orders___Due_Date_label1"></p>
-            <p class="errorText"></p>
-          </div>
-        </li>
-      </ul>
-      <div class="Hdrbtm" id="from-header"><span class="sectionHdr f-Semibold">Asset Details</span></div>
-      <ul class="col-layout" data-instance="1">
-        <li class="col-cont">
-          <div class="field-cont">
-            <div class="field-label"><span class="fld-text">Asset</span></div>
-            <div class="field-value" data-instance="1" data-apiname="Work_Orders___Asset" data-apinameorg="Asset" data-datatype="lookup" data-lookupmod="Assets">
-              <div class="widget-lookup-main lookupWrap"><input type="text" class="valueText rf-valFld" data-fldapiname="Asset" name="lookup" id="Work_Orders___Asset" autocomplete="off" readonly="readonly" tabindex="13">
-                <div class="widget-buttons-actions-div"><span class="widget-fieldicon icon zp-li-asset-icon"></span><span class="widget-search-loading-input loadspan"></span><button class="widget-option-closeicon icon" id="widget-lookup-option-reset"></button></div>
-              </div>
-            </div>
-            <p class="infoLabel" id="Work_Orders___Asset_label1"></p>
-            <p class="errorText"></p>
-          </div>
-        </li>
-      </ul>
-
-     
-      <div style="width: 100%;">
-        <div id="saveBtn" class="BtnBG">
-          <div class="widthcontrol"><button class="secondaryBtn mR10" onclick="history.back();">Cancel</button><button class="primaryBtn zf-button zf-primary-btn" onclick="history.back();"><span class="zf-button-text">Save</span></button></div>
+        </div>
+        <div class="form-botm-btn-sec">
+          <a href="" class="link-text fl"> Field Settings </a> <a href="" class="primary-button fr ml10">Save</a><a href="" class="secondary-button fr" onclick="history.back();">Cancel</a>
         </div>
       </div>
     </div>

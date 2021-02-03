@@ -1,5 +1,5 @@
 <!-- {{page-title "Setting"}} -->
 <SettingsSideBar @value={{@model.settings}}>
-  <SettingsSubtab @value={{@model}}></SettingsSubtab>
+  <SettingsSubtab @value={{@model}} @currentData={{this.getCurrentTabData}}></SettingsSubtab>
 </SettingsSideBar>
 <!-- {{outlet}} -->
