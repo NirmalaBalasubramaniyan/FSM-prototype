@@ -7,33 +7,43 @@
 input {
   border: transparent;
 }
-
+.form-label-inp {
+  width: 30%;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 10px;
+}
 .form-label {
   width: 30%;
   text-align: right;
   margin-right: 20px;
 }
 
-.form-field {
+.form-field, .form-field-drop {
   width: 70%;
   border: 1px solid #cfd9e3;
   border-radius: 6px;
   position: relative;
 }
 
-.form-field:hover {
+.form-field:hover, .form-field-drop:hover {
   border: 1px solid #30c384;
 }
 
-.form-field input[type=text] {
+.form-field input[type=text], .form-field-drop input[type=text]{
   width: 100%;
   height: 39px;
   box-sizing: border-box;
   border-radius: 6px;
   /*height: 85%;*/
   padding-left: 10px;
+  padding-right: 40px;
+  font-size: 15px;
 }
-
+.form-field-drop
+{
+  /*height: 200px;*/
+}
 .ui-form {
   /*margin-top: 100px;*/
 }
@@ -88,7 +98,7 @@ input {
   box-sizing: border-box;
   bottom: 0;
   position: fixed;
-  width: 56.5rem;
+  width: 650px;
   box-sizing: border-box;
 }
 
@@ -99,3 +109,137 @@ input {
   margin-top: 50px;
   font-family: "LatoSemibold";
 }
+
+
+
+
+/* dropdown style start here */
+
+
+.field-icon-phone::after, .field-icon-drpdon > :first-child::after
+{
+  background:  url('../images/bigin-svgicon-new.svg');
+}
+.field-icon-phone::after
+{
+    content: '';
+    background-position: -117px -254px;
+    width: 23px;
+    height: 24px;
+    float: right;
+    position: absolute;
+    margin-left: -33px;
+    top: 6px;
+}
+.field-icon-drpdon:hover
+{
+  box-shadow: 0 2px 8px #dbf1e7;
+}
+.field-icon-drpdon > :first-child::after
+{
+     content: '';
+    background-position: -374px -449px;
+    width: 19px;
+    height: 24px;
+    float: right;
+    margin-right:11px;
+}
+.field-icon-drpdon > :first-child
+{
+    width: 100%;
+    float: left;
+    padding:8px 0;
+    text-decoration: none;
+    color: #444;
+    padding-left:15px;
+     border-radius: 6px 6px 0 0;
+    box-shadow: 0 0 5px 1px #dbf1e7;
+}
+.form-field-drop a
+{
+    text-decoration: none;
+    color: #222;
+    padding: 4px 10px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.drop-ul li:first-child a
+{
+  /*background: #ddd;*/
+  /*box-shadow: 1px 1px 2px #ddd;*/
+}
+.drop-ul li a
+{
+  border-bottom: 1px solid #f0f5f8;
+  padding:14px 15px;
+  font-size:17px;
+}
+.drop-ul li a:hover
+{
+  background: #f5f8fa;
+}
+.drop-ul li a.sel
+{
+  background: #eff2f5;
+  font-family:"LatoSemibold";
+}
+
+/* dropdown style end here */
+
+
+/* checkbox style start here */
+.checkbox-custom {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+}
+
+.checkbox-custom:after {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #b9c0c7;
+    border-radius: 2px;
+}
+
+.checkbox-custom[type=checkbox]:before {
+    background: #23ae73 url('../images/bigin-svgicon-new.svg');
+   /* background-position: 2px 2px 
+    background-size: 10px 8px;
+    background-repeat: no-repeat;*/
+    background-position: -354px -453px;
+    position: absolute;
+    left: 2px;
+    z-index: 2;
+    opacity: 0;
+    width:16px;
+    height:16px;
+    
+}
+
+.checkbox-custom[type=checkbox]:checked:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    opacity: 1;
+    left: 0px;
+    border: 2px solid #23ae73;
+    border-radius: 2px;
+}
+/* checkbox style end here */

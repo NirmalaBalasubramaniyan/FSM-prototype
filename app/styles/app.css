@@ -647,6 +647,7 @@
           {
             margin-right: 15px;
           }
+          
           /**   End common css **/
 
 
@@ -968,7 +969,7 @@
 
   /* setup page */
   .setlinkarea{
-  background:  url('../images/setup-page-pattern.svg') #edf0f4;
+        background:  url('../images/setup-page-pattern.svg') #edf0f4;
         background-repeat: repeat-x;
         overflow: auto;
         height: 100vh;
@@ -1092,7 +1093,17 @@
 
 
 
-
+.createPopupCont
+{
+  width:650px;
+    padding: 0;
+    height: 100vh;
+    transition: .3s ease-out;
+    overflow: hidden;
+    float: right;
+    background: white;
+    margin-top: 58px;
+}
 
 .main-grid {
   display: grid;
