@@ -9,11 +9,12 @@ export default class Router extends EmberRouter {
 Router.map(function () {
   // this.route('tab', {path:"tab/:tab_id"});
   this.route('tab', {path:"tab/:tab_id"}, function() {
-    this.route('index', {path:"/"});
-    this.route('detail', {path:"/:record_id"}, function() {
-      this.route('editpage');
+    this.route('index', {path:"/"}, function() {
+      this.route('create');
     });
-    this.route('createpage');
+    this.route('detail', {path:"/:record_id"}, function() {
+      this.route('edit');
+    });
   });
   this.route('all-settings');
   this.route('setting', {path:"settings/:settings_path"});
@@ -21,6 +22,4 @@ Router.map(function () {
     this.route('index', { path: '/' });
     // this.route('setting', { path: '/:settings_path' });
   })
-  this.route('create');
-    this.route('edit');
 });
