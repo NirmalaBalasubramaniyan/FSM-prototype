@@ -10,7 +10,10 @@ Router.map(function () {
   // this.route('tab', {path:"tab/:tab_id"});
   this.route('tab', {path:"tab/:tab_id"}, function() {
     this.route('index', {path:"/"});
-    this.route('detail', {path:"/:record_id"});
+    this.route('detail', {path:"/:record_id"}, function() {
+      this.route('editpage');
+    });
+    this.route('createpage');
   });
   this.route('all-settings');
   this.route('setting', {path:"settings/:settings_path"});

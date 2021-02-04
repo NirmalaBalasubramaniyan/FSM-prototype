@@ -6,7 +6,6 @@ var settingsJson = [{ "title": "General", "type": "trial", "submenus": [{ "title
 export default class SettingRoute extends Route {
   @tracked path = "index";
   model = function(json) {
-    debugger;
     console.log('Inside setting.js');
     var { settings_path: path } = json;
     var currentTabDetail = {};
